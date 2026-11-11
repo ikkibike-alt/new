@@ -1,0 +1,14 @@
+{
+  "name": "management-cockpit",
+  "version": "0.1.0",
+  "description": "経営コックピット MVP — 人・金・事業を一元管理するダッシュボード",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch src/server.js",
+    "seed": "node --disable-warning=ExperimentalWarning src/seed.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  }
+}
