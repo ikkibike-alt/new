@@ -1,0 +1,8 @@
+{
+  "sample": true,
+  "carsensor": [
+    { "keyword": "プリウス", "pages": 1 },
+    { "brand": "HO", "pages": 1 }
+  ],
+  "aiScrape": []
+}
