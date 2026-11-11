@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MINIMAL INDEX｜ミニマリスト情報まとめ</title>
+<meta name="description" content="ミニマリストの最新トピック、Instagram・YouTube、ブログをテーマ別・男女別・考え方のタイプ別に探せるシンプルな情報インデックス。AIが読み取りやすい構造化データ付き。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"WebSite","name":"MINIMAL INDEX","inLanguage":"ja","description":"ミニマリスト情報をテーマ別・タイプ別に整理した集約サイト","dateModified":"2026-11-11"},
+    {"@type":"DefinedTermSet","name":"ミニマリストの考え方タイプ","hasDefinedTerm":[
+      {"@type":"DefinedTerm","name":"ゆる派","description":"好きなものは残し、無理なく減らす"},
+      {"@type":"DefinedTerm","name":"ストイック派","description":"家具や日用品まで極限まで減らす"},
+      {"@type":"DefinedTerm","name":"豊かさ派","description":"減らした余白で暮らしを楽しむ（シンプリスト）"},
+      {"@type":"DefinedTerm","name":"効率派","description":"家事や片付けをラクにするために減らす"},
+      {"@type":"DefinedTerm","name":"節約派","description":"持たない暮らしでお金を貯める"},
+      {"@type":"DefinedTerm","name":"思想派","description":"生き方・価値観としてミニマリズムを考える"}
+    ]},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"ミニマリストとは？","acceptedAnswer":{"@type":"Answer","text":"本当に必要なもの・好きなものだけを持ち、管理の負担を減らして時間やお金を大切なことに使う暮らし方をする人。"}},
+      {"@type":"Question","name":"2026年のミニマリズムの傾向は？","acceptedAnswer":{"@type":"Answer","text":"ゼロを目指さない「ゆるミニマリズム」、見せる部屋より暮らしやすさ重視、仕事にも広がる「キャリアミニマリズム」、デジタルの整理が目立つ。"}},
+      {"@type":"Question","name":"断捨離して後悔する人は多い？","acceptedAnswer":{"@type":"Answer","text":"1000人調査では64.7%が後悔ゼロ。後悔しやすいのは衣類・バッグ・靴(14.6%)、本・雑誌・漫画(9.8%)、CD・DVD・ゲーム(7.5%)。"}}
+    ]}
+  ]
+}
+</script>
+<style>
+:root{--bg:#fafaf8;--fg:#1a1a1a;--mute:#777;--line:#e6e4df;--acc:#3d5a4a;--soft:#eef1ee;--card:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:"Inter","Noto Sans JP",sans-serif;line-height:1.75;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:56px 0 28px;border-bottom:1px solid var(--line)}
+.logo{font-family:Inter;font-weight:600;letter-spacing:.32em;font-size:13px}
+h1{font-size:26px;font-weight:700;margin:14px 0 8px}
+.lead{color:var(--mute);font-size:14px}
+.updated{display:inline-block;margin-top:14px;font-size:12px;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:2px 10px}
+nav{position:sticky;top:0;background:rgba(250,250,248,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:18px;overflow-x:auto;padding-top:12px;padding-bottom:12px;font-size:13px;white-space:nowrap}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--fg)}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h2{font-size:12px;letter-spacing:.24em;font-family:Inter;font-weight:600;color:var(--acc);margin-bottom:6px}
+h3.sec{font-size:20px;margin-bottom:18px}
+h4{font-size:13px;color:var(--mute);font-weight:500;margin:26px 0 10px;letter-spacing:.06em}
+.tldr{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 22px}
+.tldr li{margin-left:1.1em;margin-bottom:6px}
+.tabs{display:flex;border:1px solid var(--fg);border-radius:10px;overflow:hidden;margin-bottom:20px}
+.tabs button{flex:1;font:inherit;font-size:14px;font-weight:500;padding:10px;border:none;background:var(--card);cursor:pointer;color:var(--fg)}
+.tabs button.on{background:var(--fg);color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:99px;cursor:pointer;color:var(--fg)}
+.chips button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-bottom:14px}
+.seg button{font:inherit;font-size:13px;border:none;background:var(--card);padding:6px 16px;cursor:pointer;color:var(--fg)}
+.seg button.on{background:var(--fg);color:#fff}
+.types{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+.type{font:inherit;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;cursor:pointer;color:var(--fg)}
+.type b{display:block;font-size:14px}
+.type span{font-size:12px;color:var(--mute);line-height:1.5;display:block;margin-top:2px}
+.type.on{border-color:var(--acc);background:var(--soft)}
+.type.on b{color:var(--acc)}
+.desc{font-size:13px;color:#555;background:var(--soft);border-radius:8px;padding:10px 14px;margin-top:14px}
+.news{list-style:none}
+.news li{padding:12px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:86px 1fr;gap:12px}
+.news li:first-child{border-top:none}
+.date{font-family:Inter;font-size:12px;color:var(--mute);padding-top:3px}
+.news a{text-decoration:none;font-weight:500}.news a:hover{text-decoration:underline}
+.src{font-size:12px;color:var(--mute)}
+.news p{font-size:13px;color:#555;margin-top:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:5px;text-decoration:none;transition:border-color .15s}
+.card:hover{border-color:var(--fg)}
+.card .h{font-family:Inter;font-size:13px;color:var(--acc)}
+.card .n{font-weight:700}
+.card .d{font-size:13px;color:#555;flex:1}
+.card .t{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px}
+.card .t span{font-size:11px;color:var(--mute);border:1px solid var(--line);border-radius:4px;padding:0 6px}
+.card .t span.ty{color:var(--acc);border-color:#c9d4cc;background:var(--soft)}
+.empty{font-size:13px;color:var(--mute);padding:8px 0}
+.list{list-style:none}
+.list li{padding:10px 0;border-top:1px solid var(--line);font-size:14px}
+.list li:first-child{border-top:none}
+.note{font-size:12px;color:var(--mute);margin-top:14px}
+.principles{counter-reset:p;list-style:none;display:grid;gap:10px}
+.principles li{counter-increment:p;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px 14px 52px;position:relative;font-size:14px}
+.principles li::before{content:counter(p,decimal-leading-zero);position:absolute;left:16px;top:14px;font-family:Inter;font-weight:600;color:var(--acc)}
+details{border-top:1px solid var(--line);padding:12px 0}
+details:first-of-type{border-top:none}
+summary{cursor:pointer;font-weight:500;list-style:none}
+summary::after{content:"＋";float:right;color:var(--mute)}
+details[open] summary::after{content:"－"}
+details p{font-size:14px;color:#555;margin-top:8px}
+pre{background:#1a1a1a;color:#e8e8e3;font-size:12px;padding:16px;border-radius:10px;overflow:auto;max-height:280px;line-height:1.55}
+.btn{font:inherit;font-size:13px;background:var(--fg);color:#fff;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;margin-top:12px}
+footer{padding:36px 0 60px;font-size:12px;color:var(--mute)}
+.card .p{font-size:10px;font-family:Inter;font-weight:600;letter-spacing:.08em;color:#fff;background:var(--fg);border-radius:4px;padding:1px 6px;align-self:flex-start}
+.card .p.yt{background:#b33a3a}
+.card .s{font-size:12px;color:var(--mute)}
+.picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.pick{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.pick .frame{position:relative;aspect-ratio:16/9;background:#111;display:block;width:100%;border:none;cursor:pointer;padding:0}
+.pick .frame img{width:100%;height:100%;object-fit:cover;display:block;opacity:.9}
+.pick .frame .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.45))}
+.pick iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
+.pick .cap{padding:10px 14px;font-size:13px}
+.pick .cap small{display:block;color:var(--mute);font-size:11px;margin-top:2px}
+.pick blockquote.instagram-media{margin:0!important;min-width:0!important;width:100%!important;border:0!important}
+[hidden]{display:none!important}
+@media(max-width:520px){h1{font-size:22px}.news li{grid-template-columns:1fr;gap:2px}.types{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">MINIMAL INDEX</div>
+    <h1>ミニマリスト情報を、ひとつに。</h1>
+    <p class="lead">メディア・ブログ・Instagram・YouTubeのミニマリスト情報を、テーマ別・タイプ別に整理しました。</p>
+    <span class="updated">最終更新 2026.11.11</span>
+  </div>
+</header>
+
+<nav aria-label="セクション">
+  <div class="wrap">
+    <a href="#summary">要約</a><a href="#explore">テーマ・タイプで探す</a><a href="#pickup" id="navPick" hidden>注目の動画・投稿</a><a href="#news">最新トピック</a><a href="#basics">基本</a><a href="#faq">FAQ</a><a href="#data">AI向けデータ</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="summary">
+  <h2>SUMMARY</h2>
+  <h3 class="sec">いまのミニマリズム、3行で</h3>
+  <div class="tldr">
+    <ul>
+      <li><b>「ゼロを目指さない」が主流に。</b>全部捨てるより、管理が負担なものだけを減らす「ゆるミニマリスト」型が広がっている。</li>
+      <li><b>モノから働き方・デジタルへ。</b>仕事でも「何を手放すか」を考える「キャリアミニマリズム」や、使わないアカウントの整理が話題。</li>
+      <li><b>見せる部屋より、暮らしやすい家。</b>「映え」より、自分らしく長く使えるものを選ぶ流れ。</li>
+    </ul>
+  </div>
+</section>
+
+<section id="explore">
+  <h2>EXPLORE</h2>
+  <h3 class="sec">テーマ・タイプで探す</h3>
+  <div class="tabs" role="tablist">
+    <button class="on" data-tab="theme" role="tab">テーマ別</button>
+    <button data-tab="type" role="tab">男女・タイプ別</button>
+  </div>
+
+  <div id="pane-theme">
+    <div class="chips" id="themeChips"></div>
+    <h4>記事・トピック</h4>
+    <ul class="news" id="themeNews"></ul>
+    <h4>Instagram</h4>
+    <div class="grid" id="themeIg"></div>
+    <h4>YouTube</h4>
+    <div class="grid" id="themeYt"></div>
+    <h4>ブログ・メディア</h4>
+    <ul class="list" id="themeBlogs"></ul>
+  </div>
+
+  <div id="pane-type" hidden>
+    <div class="seg" id="genderSeg">
+      <button class="on" data-g="all">すべて</button><button data-g="f">女性</button><button data-g="m">男性</button>
+    </div>
+    <div class="seg" id="platSeg" style="margin-left:6px">
+      <button class="on" data-p="all">全SNS</button><button data-p="ig">Instagram</button><button data-p="yt">YouTube</button>
+    </div>
+    <div class="types" id="typeCards"></div>
+    <p class="desc" id="typeDesc"></p>
+    <h4>発信者</h4>
+    <div class="grid" id="typeIg"></div>
+    <p class="note">※ 性別は公開プロフィールなどからの目安です。考え方のタイプは発信内容から編集部が分類しました。</p>
+  </div>
+</section>
+
+<section id="pickup" hidden>
+  <h2>PICK UP</h2>
+  <h3 class="sec">注目の動画・投稿</h3>
+  <p class="lead" style="margin-bottom:16px">YouTube・Instagramの公式埋め込み機能で表示しています。出典は各カードに記載。</p>
+  <div class="picks" id="picks"></div>
+</section>
+
+<section id="news">
+  <h2>LATEST</h2>
+  <h3 class="sec">最新トピック（すべて）</h3>
+  <ul class="news" id="allNews"></ul>
+</section>
+
+<section id="basics">
+  <h2>BASICS</h2>
+  <h3 class="sec">基本の考え方 5つ</h3>
+  <ol class="principles">
+    <li><b>減らす基準は「管理の負担」。</b>持っていることより、管理が重いものから手放す。</li>
+    <li><b>ゼロは目指さない。</b>思い出・安全・本当に好きなものは残してよい。</li>
+    <li><b>1つで何役もこなすものを選ぶ。</b>道具の数より使い道の数。</li>
+    <li><b>買う前に「手放す時」を考える。</b>長く使えるか、売れるかで選ぶ。</li>
+    <li><b>定期的に見直す。</b>例：2か月に1回、持ち物と予定・アカウントを点検。</li>
+  </ol>
+</section>
+
+<section id="faq">
+  <h2>FAQ</h2>
+  <h3 class="sec">よくある質問</h3>
+  <details><summary>ミニマリストとは？</summary><p>本当に必要なもの・好きなものだけを持ち、管理の負担を減らして時間やお金を大切なことに使う暮らし方をする人のこと。</p></details>
+  <details><summary>自分はどのタイプ？</summary><p>「好きなものは残したい」ならゆる派、「家事をラクにしたい」なら効率派、「お金を貯めたい」なら節約派から見るのがおすすめ。上の「男女・タイプ別」で探せます。</p></details>
+  <details><summary>何から始めればいい？</summary><p>後悔しにくい消耗品・紙類・使っていないアプリやアカウントから。服や本は後悔が出やすいので最後に。</p></details>
+  <details><summary>断捨離して後悔する人は多い？</summary><p>1000人調査では64.7%が「後悔ゼロ」。後悔しやすいのは衣類・バッグ・靴、本・雑誌・漫画、CD・DVD・ゲームの順。</p></details>
+</section>
+
+<section id="data">
+  <h2>FOR AI</h2>
+  <h3 class="sec">AI向けデータ（JSON）</h3>
+  <p class="lead">このページの内容を構造化したデータです。ChatGPTやClaudeに貼り付けて質問できます。</p>
+  <pre id="json"></pre>
+  <button class="btn" id="copy">JSONをコピー</button>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">MINIMAL INDEX — 各情報の著作権は出典元に帰属します。リンク先で原文をご確認ください。</div>
+</footer>
+
+<script>
+const THEMES=["部屋・インテリア","服・持ち物","片付け・断捨離","お金・節約","家族・子育て","働き方・デジタル"];
+const TYPES={
+ "ゆる派":"好きなものは残し、無理なく減らす。いま一番多いスタイル。",
+ "ストイック派":"家具や日用品まで極限まで減らす。究極の身軽さを求める人に。",
+ "豊かさ派":"減らしてできた余白で暮らしを楽しむ。「シンプリスト」とも。",
+ "効率派":"家事や片付けをラクにするために減らす。忙しい人・家族向け。",
+ "節約派":"持たない暮らしでお金を貯める。家計とセットで考えたい人に。",
+ "思想派":"生き方・価値観としてミニマリズムを考える。入門や海外の発信も。"
+};
+const news=[
+ {date:"2026.11",title:"ミニマリスト系YouTuberランキング、1位は登録者22万人",source:"インフルエンサーラボ",url:"https://influencer.tri-as.co.jp/youtube/minimalist.html",summary:"1位「少ない物ですっきり暮らす」（22万人）、2位「ミニマリストしぶ」（21.4万人）。TOP30の83%が直近90日に投稿。",themes:["働き方・デジタル"]},
+ {date:"2026.10.06",title:"30代ミニマリスト男性のワンルームが「ホテルみたい」",source:"ねとらぼ",url:"https://nlab.itmedia.co.jp/cont/articles/4034162/",summary:"ミニマリストsinさんの新居ルームツアーが33万回以上再生。",themes:["部屋・インテリア"]},
+ {date:"2026.09.30",title:"引っ越し当日に荷造り開始、13分で完了",source:"ねとらぼ",url:"https://nlab.itmedia.co.jp/cont/articles/4030690/",summary:"Tokimaru Tanakaさんが14㎡の部屋から引っ越す動画が19万回以上再生。",themes:["部屋・インテリア","片付け・断捨離"]},
+ {date:"2026.07.29",title:"築48年の団地で1人暮らし、2年後の部屋",source:"ねとらぼ",url:"https://nlab.itmedia.co.jp/cont/articles/3953224/",summary:"田村美葉さんが「この2年で買わなくなったもの」をルームツアーで紹介。",themes:["部屋・インテリア","お金・節約"]},
+ {date:"2026.07.11",title:"4人家族の“ミニマムな心地よい家”",source:"ねとらぼ",url:"https://nlab.itmedia.co.jp/cont/articles/3904962/",summary:"「ズボラだから持たない」ママのルームツアーと、家事を減らすコツ。",themes:["家族・子育て","部屋・インテリア"]},
+ {date:"2026.07",title:"Minimalist Takeruのチャンネルが「ミニマリストの暮らし」に",source:"YouTube",url:"https://www.youtube.com/c/MinimalistTakeru",summary:"登録者13万人のチャンネルを、ミニマリストTOKUNOさんが引き継いで名称変更。",themes:["働き方・デジタル"]},
+ {date:"2026.06.02",title:"3人家族がすっきり暮らす家のルームツアー",source:"ねとらぼ",url:"https://nlab.itmedia.co.jp/cont/articles/3856118/",summary:"ゆるっとミニマルなぴーこさんの自宅。動線に沿った収納が話題。",themes:["家族・子育て","部屋・インテリア"]},
+ {date:"2026.11.06",title:"来年の目標の前に「何を手放すか」を決める",source:"Forbes JAPAN",url:"https://forbesjapan.com/articles/detail/107818",summary:"年末のキャリア振り返りは、追いかけるものより先に手放すものを決めよう、という提案。",themes:["働き方・デジタル"]},
+ {date:"2026.11.05",title:"少ない道具を長持ちさせる使い方と手入れ",source:"筆子ジャーナル",url:"https://minimalist-fudeko.com/",summary:"数を減らした後は、残した台所道具やPCを傷めず長く使う視点へ。",themes:["服・持ち物","お金・節約"]},
+ {date:"2026.11.04",title:"3年間毎日使うクッカーを愛用する理由",source:"ミニマリストsoraのブログ",url:"https://minimalist-sora.com/",summary:"1つの道具を多用途に使うミニマリストの定番の考え方。",themes:["服・持ち物"]},
+ {date:"2026.11.02",title:"転勤族ミニマリストの「やめた家事」",source:"goodroom journal",url:"https://www.goodrooms.jp/journal/",summary:"備え付け収納や大掃除を手放した実例。10月には5人のルームツアー記事も。",themes:["部屋・インテリア","片付け・断捨離"]},
+ {date:"2026.10.31",title:"よその家計簿の金額は真似しない",source:"筆子ジャーナル",url:"https://minimalist-fudeko.com/",summary:"予算は他人の数字ではなく、自分が続けられる額で決める。",themes:["お金・節約"]},
+ {date:"2026.10.24",title:"収入が増えたのにお金が残らない？",source:"筆子ジャーナル",url:"https://minimalist-fudeko.com/",summary:"満足していない出費だけを以前のやり方に戻す、という見直し方。",themes:["お金・節約"]},
+ {date:"2026.10.15",title:"2026年ミニマリストの秋服",source:"ミニマリストsoraのブログ",url:"https://minimalist-sora.com/",summary:"少ない服でバリエーションを増やす工夫。",themes:["服・持ち物"]},
+ {date:"2026.08",title:"“ゼロを目指さない”ミニマリズム",source:"ROOMIE",url:"https://www.roomie.jp/2026/08/1857101/",summary:"多拠点居住サービスをきっかけに物を減らしつつ、好きなものは残す暮らし。",themes:["部屋・インテリア"]},
+ {date:"2026.08.04",title:"Z世代を超えて広がる「キャリアミニマリズム」",source:"Forbes JAPAN",url:"https://forbesjapan.com/articles/detail/102229",summary:"Glassdoor調査でZ世代の68%が「給与や肩書のためでなければ管理職を目指さない」と回答。",themes:["働き方・デジタル"]},
+ {date:"2026.08",title:"ミニマリスト12年目の“持っていないもの”195選",source:"note / みがる",url:"https://note.com/migalu_minimal/n/n40f7b33384a6",summary:"「全部捨てよう」ではなく、管理の負担になっているものを見つけるためのリスト。",themes:["片付け・断捨離","家族・子育て"]},
+ {date:"2026.04",title:"断捨離で後悔したもの、1000人調査",source:"みしぇる（ブログ）",url:"https://ameblo.jp/happymichelle24/entry-12963563870.html",summary:"64.7%が「後悔ゼロ」。後悔1位は衣類・バッグ・靴（14.6%）。",themes:["片付け・断捨離","服・持ち物"]},
+ {date:"2026.03.28",title:"「見せる部屋」から「生きる家」へ",source:"Forbes JAPAN",url:"https://forbesjapan.com/articles/detail/94663",summary:"2010年代のオールベージュ的ミニマル美学から、自分らしさ重視の住まいへ。",themes:["部屋・インテリア"]},
+ {date:"2026",title:"2026年は「リセットの年」",source:"Newsweek日本版",url:"https://www.newsweekjapan.jp/articles/-/58185",summary:"リセール前提のワードローブやアナログ趣味など、意図を持って暮らす方向へ。",themes:["働き方・デジタル","服・持ち物"]}
+];
+const accounts=[
+ {h:"nken_second",n:"エヌケン",g:"m",d:"シンプリスト。1K一人暮らしで片付け・収納・自炊・掃除など「暮らしの楽しみ方」を発信。",themes:["部屋・インテリア","片付け・断捨離"],types:["豊かさ派"]},
+ {h:"minimalist_sibu",n:"ミニマリストしぶ",g:"m",d:"余白が好きな男性ミニマリスト。座右の銘は「少数精鋭」。",themes:["服・持ち物","部屋・インテリア"],types:["ストイック派"]},
+ {h:"theminimalists",n:"The Minimalists",g:"m",d:"米国の男性2人組。ポッドキャストや映像作品でミニマリズムの考え方を発信。",themes:["働き方・デジタル"],types:["思想派"]},
+ {h:"minimalist_kayo",n:"カヨ",g:"f",d:"40代・賃貸・1児のママ。整理収納アドバイザー1級。持たない暮らしでお金が貯まる。",themes:["お金・節約","家族・子育て"],types:["節約派","ゆる派"]},
+ {h:"_konolife",n:"kono",g:"f",d:"ゆるミニマリスト。年間30着のワードローブと、子どもがいてもスッキリした暮らし。",themes:["服・持ち物","家族・子育て"],types:["ゆる派"]},
+ {h:"nozominimam",n:"Nozomi",g:"f",d:"2児のママ。コップや各部屋のゴミ箱もない暮らし。著書『ものも家事も最低限。』",themes:["家族・子育て","部屋・インテリア"],types:["ストイック派","効率派"]},
+ {h:"minimalist__ask",n:"あすか",g:"f",d:"ゆるミニマリスト。無理なく続けられるシンプルな暮らし。",themes:["部屋・インテリア"],types:["ゆる派"]},
+ {h:"minimal_kurashi",n:"ミニマリストますみ",g:"f",d:"ママに贈るやさしいミニマリズム。片付け後の暮らしや考え方。",themes:["家族・子育て","片付け・断捨離"],types:["ゆる派","効率派"]},
+ {h:"minimalife_kaoru",n:"香村薫",g:"f",d:"「LINE片づけ」主宰。トヨタ式おうち片づけなど著書多数。",themes:["片付け・断捨離","家族・子育て"],types:["効率派"]},
+ {h:"minimalist_kaonashi",n:"主婦ミニマリストかおなし",g:"f",d:"片付けが苦手な主婦が、ミニマリストの暮らしを取り入れていく過程を発信。",themes:["片付け・断捨離","家族・子育て"],types:["効率派","ゆる派"]},
+ {h:"minimalist_apon",n:"ミニマリストあぽん",g:"f",d:"「捨てて気楽に暮らす」がテーマ。手放すコツを分かりやすく。",themes:["片付け・断捨離"],types:["効率派"]},
+ {h:"aya.jima",n:"あやじま",g:"f",d:"人気ミニマリスト。持ち物や暮らしのアイデア。",themes:["服・持ち物"],types:["豊かさ派"]},
+ {h:"magu.09",n:"magu",g:"f",d:"ミニマルで整った部屋と暮らしの写真。",themes:["部屋・インテリア"],types:["豊かさ派"]},
+ {h:"minimalisttextboo",n:"ミニマリストの教科書",g:"-",d:"初心者向けにミニマリズムの基本をまとめて発信。",themes:["片付け・断捨離"],types:["思想派"]},
+ {h:"piiiko_minimal",n:"ぴーこ",g:"f",d:"夫と娘との3人暮らし。ゆるっとミニマルな日常と、少ない服・お金の話。",themes:["家族・子育て","服・持ち物","お金・節約"],types:["ゆる派"]}
+].map(a=>({...a,p:"ig"}));
+/* YouTube（登録者数は2026年11月時点・インフルエンサーラボ調べ） */
+const channels=[
+ {h:"少ない物ですっきり暮らす",n:"少ない物ですっきり暮らす",g:"-",s:"22万人",d:"家族4人で暮らすミニマリストのチャンネル。ミニマリスト系で登録者数1位。",themes:["家族・子育て","部屋・インテリア"],types:["効率派"]},
+ {h:"minimalist_sibu",n:"ミニマリストしぶ",g:"m",s:"21.4万人",d:"1995年生まれ・福岡出身。ブログから始まった代表的な男性ミニマリスト。",themes:["服・持ち物","部屋・インテリア"],types:["ストイック派"]},
+ {h:"mai.minimalism",n:"mai minimalism",g:"f",s:"16.5万人",d:"夫と賃貸1LDKで暮らすミニマリスト。",themes:["部屋・インテリア"],types:["ゆる派"]},
+ {h:"minimalist320",n:"ミニマリストの暮らし",g:"-",s:"13.5万人",d:"旧Minimalist Takeru。持ち物・お金・習慣の手放し方。2026年7月にTOKUNOさんが継承。",themes:["お金・節約","働き方・デジタル"],types:["思想派","節約派"]},
+ {h:"yuminyan_mini",n:"ミニマリストゆみにゃん",g:"f",s:"13.3万人",d:"東京で一人暮らしする節約ミニマリスト。",themes:["お金・節約"],types:["節約派"]},
+ {h:"yoshimiko_desu_",n:"よしみ子のおひとり様ライフ",g:"f",s:"12.9万人",d:"一人暮らしを楽しむミニマリスト。持ち物紹介も人気。",themes:["服・持ち物"],types:["豊かさ派"]},
+ {h:"mochi.minimum",n:"Mochi.ミニマリストになりたい私",g:"f",s:"8.6万人",d:"30代女性。ミニマリストを目指す過程と自作家具のある部屋。",themes:["部屋・インテリア"],types:["ゆる派"]},
+ {h:"nozominimam",n:"ミニマリスト Nozomi",g:"f",s:"8.0万人",d:"ミニマリスト歴12年。子どもと暮らしながら物も家事も減らす。",themes:["家族・子育て"],types:["ストイック派","効率派"]},
+ {h:"sinminimallife",n:"ミニマリストsin",g:"m",s:"7.0万人",d:"30代男性・元アパレル。「普通」が生きづらい人へのミニマルライフ。",themes:["服・持ち物","部屋・インテリア"],types:["思想派","豊かさ派"]},
+ {h:"atsushivlog",n:"あつしのぶろぐ / ゆるく生きる",g:"m",s:"6.2万人",d:"ワンルームでゆるく暮らす男性ミニマリスト。",themes:["部屋・インテリア","お金・節約"],types:["ゆる派","節約派"]},
+ {h:"miemalist",n:"ミニマムな心地よい暮らし",g:"f",s:"4.8万人",d:"4人家族と犬。「ズボラだから持たない」家事を減らす工夫。",themes:["家族・子育て"],types:["効率派"]},
+ {h:"minimalist__ask",n:"あすかのミニマルぐらし。",g:"f",s:"3.3万人",d:"東京の白を基調としたミニマルな部屋。",themes:["部屋・インテリア"],types:["ゆる派"]},
+ {h:"tokimaru",n:"Tokimaru Tanaka",g:"m",s:"",d:"14㎡の部屋で暮らす男性ミニマリスト。13分で終わる引っ越し荷造りが話題。",themes:["部屋・インテリア"],types:["ストイック派"]},
+ {h:"tamuramiha",n:"団地で暮らす旅好きミニマリスト",g:"f",s:"",d:"築48年の団地で一人暮らしする40代女性。買わなくなったものの話。",themes:["部屋・インテリア","お金・節約"],types:["ゆる派"]}
+].map(c=>({...c,p:"yt"}));
+const creators=[...accounts,...channels];
+
+/* ===== 注目の動画・投稿（公式埋め込み） =====
+   ここにURLを足すだけで表示されます。
+   YouTube例: {type:"youtube", url:"https://www.youtube.com/watch?v=動画ID", title:"動画タイトル", credit:"チャンネル名"}
+   Instagram例: {type:"instagram", url:"https://www.instagram.com/p/投稿ID/", credit:"@アカウント名"}
+*/
+const EMBEDS=[];
+const blogs=[
+ {n:"筆子ジャーナル",url:"https://minimalist-fudeko.com/",d:"50代からの持たない暮らし。家計・手入れなど実用的。ほぼ毎日更新。",themes:["お金・節約","服・持ち物","片付け・断捨離"]},
+ {n:"ミニマリストsoraのブログ",url:"https://minimalist-sora.com/",d:"持ち物レビュー、服、引っ越しなど。週1ペースで更新。",themes:["服・持ち物","部屋・インテリア"]},
+ {n:"goodroom journal「シンプリストの暮らしかた」",url:"https://www.goodrooms.jp/journal/",d:"ミニマリストの部屋と断捨離ルールの取材連載。",themes:["部屋・インテリア","片付け・断捨離"]},
+ {n:"みにまるなひげ",url:"https://www.higeusen.com/",d:"断捨離歴11年、99.9%を手放した女性ミニマリスト。",themes:["片付け・断捨離","服・持ち物"]},
+ {n:"Forbes JAPAN「ミニマリスト」タグ",url:"https://forbesjapan.com/tag/detail/minimalist",d:"働き方・消費トレンドとしてのミニマリズム。",themes:["働き方・デジタル","お金・節約"]},
+ {n:"にほんブログ村「ミニマルライフ」",url:"https://lifestyle.blogmura.com/minimallife/",d:"個人ブログの新着を横断的にチェック。",themes:["家族・子育て","部屋・インテリア","片付け・断捨離"]}
+];
+
+const $=id=>document.getElementById(id);
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const newsHTML=list=>list.length?list.map(x=>`<li><span class="date">${x.date}</span><div><a href="${x.url}">${esc(x.title)}</a> <span class="src">${esc(x.source)}</span><p>${esc(x.summary)}</p></div></li>`).join(''):'<li class="empty">該当する記事はまだありません。</li>';
+const gLabel={m:"男性",f:"女性","-":"運営"};
+const urlOf=a=>a.p==="yt"?`https://www.youtube.com/@${encodeURIComponent(a.h)}`:`https://www.instagram.com/${a.h}/`;
+const cardHTML=list=>list.length?list.map(a=>`<a class="card" href="${urlOf(a)}"><span class="p ${a.p}">${a.p==="yt"?"YouTube":"Instagram"}</span><span class="h">@${esc(a.h)}</span><span class="n">${esc(a.n)}</span>${a.s?`<span class="s">登録者 ${a.s}</span>`:''}<span class="d">${esc(a.d)}</span><span class="t">${a.types.map(t=>`<span class="ty">${t}</span>`).join('')}<span>${gLabel[a.g]}</span></span></a>`).join(''):'<p class="empty">該当する発信者はまだいません。</p>';
+
+/* テーマ別 */
+let theme=THEMES[0];
+$('themeChips').innerHTML=THEMES.map((t,i)=>`<button class="${i?'':'on'}" data-t="${t}">${t}</button>`).join('');
+function renderTheme(){
+  $('themeNews').innerHTML=newsHTML(news.filter(x=>x.themes.includes(theme)));
+  $('themeIg').innerHTML=cardHTML(accounts.filter(a=>a.themes.includes(theme)));
+  $('themeYt').innerHTML=cardHTML(channels.filter(a=>a.themes.includes(theme)));
+  const b=blogs.filter(x=>x.themes.includes(theme));
+  $('themeBlogs').innerHTML=b.length?b.map(x=>`<li><a href="${x.url}"><b>${esc(x.n)}</b></a> — ${esc(x.d)}</li>`).join(''):'<li class="empty">該当なし</li>';
+}
+$('themeChips').onclick=e=>{const b=e.target.closest('button');if(!b)return;theme=b.dataset.t;$('themeChips').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));renderTheme();};
+
+/* 男女・タイプ別 */
+let gender="all",type="all",plat="all";
+$('typeCards').innerHTML=`<button class="type on" data-y="all"><b>すべて</b><span>全タイプを表示</span></button>`+Object.entries(TYPES).map(([k,v])=>`<button class="type" data-y="${k}"><b>${k}</b><span>${v.split('。')[0]}</span></button>`).join('');
+function renderType(){
+  $('typeDesc').textContent=type==="all"?"考え方のタイプを選ぶと、近いアカウントに絞り込めます。":`${type}：${TYPES[type]}`;
+  $('typeIg').innerHTML=cardHTML(creators.filter(a=>(gender==="all"||a.g===gender)&&(type==="all"||a.types.includes(type))&&(plat==="all"||a.p===plat)));
+}
+$('platSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;plat=b.dataset.p;$('platSeg').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));renderType();};
+
+/* 注目の動画・投稿 */
+const ytId=u=>{const m=String(u).match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([\w-]{11})/);return m?m[1]:null;};
+function renderPicks(){
+  if(!EMBEDS.length)return;
+  $('pickup').hidden=false;$('navPick').hidden=false;
+  let ig=false;
+  $('picks').innerHTML=EMBEDS.map((x,i)=>{
+    if(x.type==="youtube"){const id=ytId(x.url);if(!id)return'';
+      return `<div class="pick"><button class="frame" data-yt="${id}" aria-label="${esc(x.title||'動画')}を再生"><img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span class="play">▶ 再生する</span></button><div class="cap">${esc(x.title||'')}<small>出典：<a href="${esc(x.url)}">${esc(x.credit||'YouTube')}</a>（YouTube）</small></div></div>`;}
+    if(x.type==="instagram"){ig=true;
+      return `<div class="pick"><blockquote class="instagram-media" data-instgrm-permalink="${esc(x.url)}" data-instgrm-version="14"><a href="${esc(x.url)}">Instagramで見る</a></blockquote><div class="cap"><small>出典：<a href="${esc(x.url)}">${esc(x.credit||'Instagram')}</a>（Instagram）</small></div></div>`;}
+    return'';}).join('');
+  $('picks').onclick=e=>{const b=e.target.closest('[data-yt]');if(!b)return;
+    const f=document.createElement('iframe');f.src=`https://www.youtube-nocookie.com/embed/${b.dataset.yt}?autoplay=1`;f.allow="autoplay; encrypted-media; picture-in-picture";f.allowFullscreen=true;f.title="YouTube動画";b.replaceWith(f);};
+  if(ig){const s=document.createElement('script');s.async=true;s.src="https://www.instagram.com/embed.js";document.body.appendChild(s);}
+}
+renderPicks();
+$('typeCards').onclick=e=>{const b=e.target.closest('.type');if(!b)return;type=b.dataset.y;$('typeCards').querySelectorAll('.type').forEach(x=>x.classList.toggle('on',x===b));renderType();};
+$('genderSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;gender=b.dataset.g;$('genderSeg').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));renderType();};
+
+/* タブ */
+document.querySelector('.tabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));
+  $('pane-theme').hidden=b.dataset.tab!=="theme";$('pane-type').hidden=b.dataset.tab!=="type";};
+
+$('allNews').innerHTML=newsHTML(news);
+renderTheme();renderType();
+
+/* AI向けJSON */
+const data={site:"MINIMAL INDEX",updated:"2026-11-11",language:"ja",
+ summary:["ゼロを目指さないゆるミニマリズムが主流","キャリアミニマリズム・デジタル断捨離へ拡大","見せる部屋より暮らしやすさ重視"],
+ themes:THEMES,types:TYPES,news,
+ instagram:accounts.map(a=>({handle:"@"+a.h,name:a.n,gender:gLabel[a.g],types:a.types,themes:a.themes,description:a.d,url:urlOf(a)})),
+ youtube:channels.map(a=>({handle:"@"+a.h,name:a.n,subscribers:a.s||null,gender:gLabel[a.g],types:a.types,themes:a.themes,description:a.d,url:urlOf(a)})),
+ featured:EMBEDS,
+ blogs};
+const json=JSON.stringify(data,null,2);
+$('json').textContent=json;
+$('copy').onclick=async e=>{
+  try{await navigator.clipboard.writeText(json);e.target.textContent='コピーしました';}
+  catch(_){e.target.textContent='コピーできませんでした（上のテキストを選択してください）';}
+  setTimeout(()=>e.target.textContent='JSONをコピー',2000);
+};
+</script>
+</body>
+</html>
