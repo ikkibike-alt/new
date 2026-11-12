@@ -2,11 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MINIMAL INDEX｜ミニマリスト情報まとめ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MINIMAL INDEX</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="ミニマリストの最新トピック、Instagram・YouTube、ブログをテーマ別・男女別・考え方のタイプ別に探せるシンプルな情報インデックス。AIが読み取りやすい構造化データ付き。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -29,203 +31,272 @@
 }
 </script>
 <style>
-:root{--bg:#fafaf8;--fg:#1a1a1a;--mute:#777;--line:#e6e4df;--acc:#3d5a4a;--soft:#eef1ee;--card:#fff}
+/* Layout: one narrow left-aligned column; each section = small label column + content. Hairlines only, no cards, no accent color. */
+:root{
+  --paper:#ffffff;
+  --ink:#141414;
+  --sub:#6b6b6b;
+  --faint:#a3a3a3;
+  --rule:#e8e8e8;
+  --wash:#f6f6f5;
+  --f-latin:"Jost","Zen Kaku Gothic New","Helvetica Neue",Arial,sans-serif;
+  --f-text:"Zen Kaku Gothic New","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+  --measure:640px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#121212;--ink:#ececec;--sub:#9a9a9a;--faint:#6a6a6a;--rule:#2a2a2a;--wash:#1b1b1b;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#121212;--ink:#ececec;--sub:#9a9a9a;--faint:#6a6a6a;--rule:#2a2a2a;--wash:#1b1b1b;color-scheme:dark}
+
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--fg);font-family:"Inter","Noto Sans JP",sans-serif;line-height:1.75;font-size:15px;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-.wrap{max-width:760px;margin:0 auto;padding:0 20px}
-header{padding:56px 0 28px;border-bottom:1px solid var(--line)}
-.logo{font-family:Inter;font-weight:600;letter-spacing:.32em;font-size:13px}
-h1{font-size:26px;font-weight:700;margin:14px 0 8px}
-.lead{color:var(--mute);font-size:14px}
-.updated{display:inline-block;margin-top:14px;font-size:12px;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:2px 10px}
-nav{position:sticky;top:0;background:rgba(250,250,248,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:5}
-nav .wrap{display:flex;gap:18px;overflow-x:auto;padding-top:12px;padding-bottom:12px;font-size:13px;white-space:nowrap}
-nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--fg)}
-section{padding:44px 0;border-bottom:1px solid var(--line)}
-h2{font-size:12px;letter-spacing:.24em;font-family:Inter;font-weight:600;color:var(--acc);margin-bottom:6px}
-h3.sec{font-size:20px;margin-bottom:18px}
-h4{font-size:13px;color:var(--mute);font-weight:500;margin:26px 0 10px;letter-spacing:.06em}
-.tldr{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 22px}
-.tldr li{margin-left:1.1em;margin-bottom:6px}
-.tabs{display:flex;border:1px solid var(--fg);border-radius:10px;overflow:hidden;margin-bottom:20px}
-.tabs button{flex:1;font:inherit;font-size:14px;font-weight:500;padding:10px;border:none;background:var(--card);cursor:pointer;color:var(--fg)}
-.tabs button.on{background:var(--fg);color:#fff}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:99px;cursor:pointer;color:var(--fg)}
-.chips button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-bottom:14px}
-.seg button{font:inherit;font-size:13px;border:none;background:var(--card);padding:6px 16px;cursor:pointer;color:var(--fg)}
-.seg button.on{background:var(--fg);color:#fff}
-.types{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
-.type{font:inherit;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;cursor:pointer;color:var(--fg)}
-.type b{display:block;font-size:14px}
-.type span{font-size:12px;color:var(--mute);line-height:1.5;display:block;margin-top:2px}
-.type.on{border-color:var(--acc);background:var(--soft)}
-.type.on b{color:var(--acc)}
-.desc{font-size:13px;color:#555;background:var(--soft);border-radius:8px;padding:10px 14px;margin-top:14px}
-.news{list-style:none}
-.news li{padding:12px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:86px 1fr;gap:12px}
-.news li:first-child{border-top:none}
-.date{font-family:Inter;font-size:12px;color:var(--mute);padding-top:3px}
-.news a{text-decoration:none;font-weight:500}.news a:hover{text-decoration:underline}
-.src{font-size:12px;color:var(--mute)}
-.news p{font-size:13px;color:#555;margin-top:2px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:5px;text-decoration:none;transition:border-color .15s}
-.card:hover{border-color:var(--fg)}
-.card .h{font-family:Inter;font-size:13px;color:var(--acc)}
-.card .n{font-weight:700}
-.card .d{font-size:13px;color:#555;flex:1}
-.card .t{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px}
-.card .t span{font-size:11px;color:var(--mute);border:1px solid var(--line);border-radius:4px;padding:0 6px}
-.card .t span.ty{color:var(--acc);border-color:#c9d4cc;background:var(--soft)}
-.empty{font-size:13px;color:var(--mute);padding:8px 0}
-.list{list-style:none}
-.list li{padding:10px 0;border-top:1px solid var(--line);font-size:14px}
-.list li:first-child{border-top:none}
-.note{font-size:12px;color:var(--mute);margin-top:14px}
-.principles{counter-reset:p;list-style:none;display:grid;gap:10px}
-.principles li{counter-increment:p;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px 14px 52px;position:relative;font-size:14px}
-.principles li::before{content:counter(p,decimal-leading-zero);position:absolute;left:16px;top:14px;font-family:Inter;font-weight:600;color:var(--acc)}
-details{border-top:1px solid var(--line);padding:12px 0}
-details:first-of-type{border-top:none}
-summary{cursor:pointer;font-weight:500;list-style:none}
-summary::after{content:"＋";float:right;color:var(--mute)}
-details[open] summary::after{content:"－"}
-details p{font-size:14px;color:#555;margin-top:8px}
-pre{background:#1a1a1a;color:#e8e8e3;font-size:12px;padding:16px;border-radius:10px;overflow:auto;max-height:280px;line-height:1.55}
-.btn{font:inherit;font-size:13px;background:var(--fg);color:#fff;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;margin-top:12px}
-footer{padding:36px 0 60px;font-size:12px;color:var(--mute)}
-.card .p{font-size:10px;font-family:Inter;font-weight:600;letter-spacing:.08em;color:#fff;background:var(--fg);border-radius:4px;padding:1px 6px;align-self:flex-start}
-.card .p.yt{background:#b33a3a}
-.card .s{font-size:12px;color:var(--mute)}
-.picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
-.pick{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.pick .frame{position:relative;aspect-ratio:16/9;background:#111;display:block;width:100%;border:none;cursor:pointer;padding:0}
-.pick .frame img{width:100%;height:100%;object-fit:cover;display:block;opacity:.9}
-.pick .frame .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.45))}
-.pick iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
-.pick .cap{padding:10px 14px;font-size:13px}
-.pick .cap small{display:block;color:var(--mute);font-size:11px;margin-top:2px}
-.pick blockquote.instagram-media{margin:0!important;min-width:0!important;width:100%!important;border:0!important}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-text);font-weight:400;font-size:15px;line-height:1.9;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;letter-spacing:inherit}
+:focus-visible{outline:1px solid var(--ink);outline-offset:3px}
 [hidden]{display:none!important}
-@media(max-width:520px){h1{font-size:22px}.news li{grid-template-columns:1fr;gap:2px}.types{grid-template-columns:1fr 1fr}}
+
+.wrap{max-width:calc(var(--measure) + 200px);margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+
+/* header */
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:32px}
+.mark{font-family:var(--f-latin);font-weight:400;font-size:13px;letter-spacing:.38em}
+.top nav{display:flex;gap:22px;font-size:12px;color:var(--sub)}
+.top nav a:hover{color:var(--ink)}
+
+/* hero */
+.hero{padding-block:112px 96px}
+.hero h1{font-weight:300;font-size:clamp(28px,5.4vw,44px);line-height:1.55;letter-spacing:.06em;text-wrap:balance}
+.hero p{margin-top:32px;color:var(--sub);font-size:14px;max-width:34em}
+.inv{display:flex;flex-wrap:wrap;gap:8px 36px;margin-top:56px;font-size:12px;color:var(--sub)}
+.inv div{display:flex;align-items:baseline;gap:10px}
+.inv b{font-family:var(--f-latin);font-weight:300;font-size:26px;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:0}
+
+/* sections */
+section{display:grid;grid-template-columns:200px minmax(0,1fr);border-top:1px solid var(--rule);padding-block:72px}
+.label{font-family:var(--f-latin);font-size:11px;font-weight:400;letter-spacing:.28em;color:var(--faint);text-transform:uppercase;padding-top:6px}
+.body{min-width:0;max-width:var(--measure)}
+h2{font-weight:500;font-size:19px;letter-spacing:.08em;line-height:1.6;margin-bottom:36px;text-wrap:balance}
+h3{display:flex;align-items:baseline;gap:12px;font-family:var(--f-latin);font-weight:400;font-size:11px;letter-spacing:.24em;color:var(--sub);text-transform:uppercase;margin:56px 0 4px}
+h3:first-of-type{margin-top:40px}
+h3 .n{color:var(--faint);letter-spacing:.04em;font-variant-numeric:tabular-nums}
+
+/* summary */
+.points{list-style:none;counter-reset:pt}
+.points li{counter-increment:pt;display:grid;grid-template-columns:32px 1fr;padding-block:18px;border-bottom:1px solid var(--rule)}
+.points li:first-child{border-top:1px solid var(--rule)}
+.points li::before{content:counter(pt);font-family:var(--f-latin);font-weight:300;color:var(--faint)}
+.points b{font-weight:500;display:block}
+.points span{color:var(--sub);font-size:14px}
+
+/* filters: plain text toggles, underline marks the active one */
+.switch{display:flex;gap:28px;margin-bottom:28px;font-size:14px}
+.switch button{color:var(--faint);padding-bottom:4px;border-bottom:1px solid transparent;transition:color .2s}
+.switch button:hover{color:var(--ink)}
+.switch button.on{color:var(--ink);border-bottom-color:var(--ink)}
+.filters{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:13px}
+.filters button{color:var(--faint);padding-block:2px;transition:color .2s}
+.filters button:hover{color:var(--ink)}
+.filters button.on{color:var(--ink);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
+.filterset{display:grid;gap:14px;padding-block:20px;border-block:1px solid var(--rule)}
+.filterset .row{display:grid;grid-template-columns:56px 1fr;align-items:baseline}
+.filterset .k{font-size:11px;color:var(--faint);letter-spacing:.12em}
+.hint{font-size:13px;color:var(--sub);margin-top:20px;min-height:1.9em}
+
+/* lists */
+.entries{list-style:none}
+.entries li{border-bottom:1px solid var(--rule)}
+.entries a.item,.entries .item{display:grid;grid-template-columns:92px minmax(0,1fr);gap:4px 20px;padding-block:20px}
+.date{font-family:var(--f-latin);font-weight:300;font-size:12px;color:var(--faint);font-variant-numeric:tabular-nums;letter-spacing:.06em;padding-top:2px}
+.t{font-weight:500;line-height:1.7}
+a.item:hover .t{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.s{font-size:13px;color:var(--sub);margin-top:4px}
+.m{font-size:11px;color:var(--faint);margin-top:8px;letter-spacing:.06em}
+.m .sep{margin-inline:8px}
+.people{list-style:none}
+.people li{border-bottom:1px solid var(--rule)}
+.people a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 20px;padding-block:20px}
+.people .who{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.people .h{font-family:var(--f-latin);font-size:12px;color:var(--faint);letter-spacing:.02em;overflow-wrap:anywhere}
+.people .pf{font-family:var(--f-latin);font-size:10px;letter-spacing:.2em;color:var(--sub);text-transform:uppercase;padding-top:4px}
+.people .s,.people .m{grid-column:1/-1}
+.people a:hover .t{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.empty{font-size:13px;color:var(--faint);padding-block:20px;border-bottom:1px solid var(--rule)}
+.note{font-size:11px;color:var(--faint);margin-top:24px}
+
+/* principles */
+.rules{list-style:none;counter-reset:r}
+.rules li{counter-increment:r;display:grid;grid-template-columns:32px 1fr;padding-block:18px;border-bottom:1px solid var(--rule)}
+.rules li:first-child{border-top:1px solid var(--rule)}
+.rules li::before{content:counter(r);font-family:var(--f-latin);font-weight:300;color:var(--faint)}
+.rules b{font-weight:500}
+.rules span{display:block;color:var(--sub);font-size:14px}
+
+/* faq */
+details{border-bottom:1px solid var(--rule)}
+details:first-of-type{border-top:1px solid var(--rule)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;padding-block:18px;font-weight:500}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--f-latin);font-weight:300;color:var(--faint);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{font-size:14px;color:var(--sub);padding-bottom:22px;max-width:36em}
+
+/* pick up */
+.picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:40px 24px}
+.pick .frame{position:relative;display:block;width:100%;aspect-ratio:16/9;max-width:100%;background:var(--wash);overflow:hidden}
+.pick .frame img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:filter .4s}
+.pick .frame:hover img{filter:none}
+.pick .play{position:absolute;left:12px;bottom:10px;font-family:var(--f-latin);font-size:10px;letter-spacing:.24em;color:#fff;text-shadow:0 0 8px rgba(0,0,0,.5)}
+.pick iframe{width:100%;max-width:100%;aspect-ratio:16/9;border:0;display:block}
+.pick .cap{font-size:13px;margin-top:10px}
+.pick .cap small{display:block;font-size:11px;color:var(--faint)}
+.pick blockquote.instagram-media{margin:0!important;min-width:0!important;width:100%!important;border:0!important}
+
+/* data */
+.data-lead{font-size:14px;color:var(--sub)}
+.data-actions{display:flex;gap:28px;margin-top:24px;font-size:13px}
+.data-actions button{border-bottom:1px solid var(--ink);padding-bottom:2px}
+pre{margin-top:24px;background:var(--wash);color:var(--sub);font-size:11.5px;line-height:1.6;padding:20px;overflow:auto;max-height:320px;font-family:ui-monospace,"SF Mono",Menlo,monospace}
+
+footer{border-top:1px solid var(--rule);padding-block:48px 72px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:11px;color:var(--faint)}
+footer .mark{font-size:11px;color:var(--sub)}
+
+@media (max-width:760px){
+  .hero{padding-block:72px 64px}
+  section{grid-template-columns:1fr;padding-block:56px;gap:20px}
+  .label{padding-top:0}
+  .top nav{display:none}
+}
+@media (max-width:480px){
+  .entries a.item,.entries .item{grid-template-columns:1fr;gap:2px}
+  .inv{gap:8px 24px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap">
-    <div class="logo">MINIMAL INDEX</div>
-    <h1>ミニマリスト情報を、ひとつに。</h1>
-    <p class="lead">メディア・ブログ・Instagram・YouTubeのミニマリスト情報を、テーマ別・タイプ別に整理しました。</p>
-    <span class="updated">最終更新 2026.11.11</span>
-  </div>
+<div class="wrap">
+<header class="top">
+  <a class="mark" href="#">MINIMAL INDEX</a>
+  <nav aria-label="セクション">
+    <a href="#explore">探す</a><a href="#pickup" id="navPick" hidden>動画</a><a href="#news">最新</a><a href="#basics">基本</a><a href="#faq">FAQ</a>
+  </nav>
 </header>
 
-<nav aria-label="セクション">
-  <div class="wrap">
-    <a href="#summary">要約</a><a href="#explore">テーマ・タイプで探す</a><a href="#pickup" id="navPick" hidden>注目の動画・投稿</a><a href="#news">最新トピック</a><a href="#basics">基本</a><a href="#faq">FAQ</a><a href="#data">AI向けデータ</a>
-  </div>
-</nav>
+<div class="hero">
+  <h1>ミニマリストの情報を、<br>必要なぶんだけ。</h1>
+  <p>メディア、ブログ、Instagram、YouTube。散らばったミニマリストの情報を、テーマと考え方のタイプで整理しました。</p>
+  <div class="inv" id="inv"></div>
+</div>
 
-<main class="wrap">
-
+<main>
 <section id="summary">
-  <h2>SUMMARY</h2>
-  <h3 class="sec">いまのミニマリズム、3行で</h3>
-  <div class="tldr">
-    <ul>
-      <li><b>「ゼロを目指さない」が主流に。</b>全部捨てるより、管理が負担なものだけを減らす「ゆるミニマリスト」型が広がっている。</li>
-      <li><b>モノから働き方・デジタルへ。</b>仕事でも「何を手放すか」を考える「キャリアミニマリズム」や、使わないアカウントの整理が話題。</li>
-      <li><b>見せる部屋より、暮らしやすい家。</b>「映え」より、自分らしく長く使えるものを選ぶ流れ。</li>
-    </ul>
+  <div class="label">Summary</div>
+  <div class="body">
+    <h2>いまのミニマリズム</h2>
+    <ol class="points">
+      <li><div><b>ゼロを目指さない。</b><span>全部捨てるより、管理が負担なものだけを減らす「ゆるミニマリスト」型が広がっている。</span></div></li>
+      <li><div><b>モノから、働き方とデジタルへ。</b><span>仕事でも何を手放すかを考える「キャリアミニマリズム」や、使わないアカウントの整理が話題。</span></div></li>
+      <li><div><b>見せる部屋より、暮らしやすい家。</b><span>映えより、自分らしく長く使えるものを選ぶ流れ。</span></div></li>
+    </ol>
   </div>
 </section>
 
 <section id="explore">
-  <h2>EXPLORE</h2>
-  <h3 class="sec">テーマ・タイプで探す</h3>
-  <div class="tabs" role="tablist">
-    <button class="on" data-tab="theme" role="tab">テーマ別</button>
-    <button data-tab="type" role="tab">男女・タイプ別</button>
-  </div>
-
-  <div id="pane-theme">
-    <div class="chips" id="themeChips"></div>
-    <h4>記事・トピック</h4>
-    <ul class="news" id="themeNews"></ul>
-    <h4>Instagram</h4>
-    <div class="grid" id="themeIg"></div>
-    <h4>YouTube</h4>
-    <div class="grid" id="themeYt"></div>
-    <h4>ブログ・メディア</h4>
-    <ul class="list" id="themeBlogs"></ul>
-  </div>
-
-  <div id="pane-type" hidden>
-    <div class="seg" id="genderSeg">
-      <button class="on" data-g="all">すべて</button><button data-g="f">女性</button><button data-g="m">男性</button>
+  <div class="label">Explore</div>
+  <div class="body">
+    <h2>テーマ・タイプで探す</h2>
+    <div class="switch" role="tablist">
+      <button class="on" data-tab="theme" role="tab" id="tab-theme">テーマ</button>
+      <button data-tab="type" role="tab" id="tab-type">男女・タイプ</button>
     </div>
-    <div class="seg" id="platSeg" style="margin-left:6px">
-      <button class="on" data-p="all">全SNS</button><button data-p="ig">Instagram</button><button data-p="yt">YouTube</button>
+
+    <div id="pane-theme">
+      <div class="filterset"><div class="filters" id="themeChips"></div></div>
+      <h3>Articles <span class="n" id="cNews"></span></h3>
+      <ul class="entries" id="themeNews"></ul>
+      <h3>Instagram <span class="n" id="cIg"></span></h3>
+      <ul class="people" id="themeIg"></ul>
+      <h3>YouTube <span class="n" id="cYt"></span></h3>
+      <ul class="people" id="themeYt"></ul>
+      <h3>Blogs <span class="n" id="cBlog"></span></h3>
+      <ul class="entries" id="themeBlogs"></ul>
     </div>
-    <div class="types" id="typeCards"></div>
-    <p class="desc" id="typeDesc"></p>
-    <h4>発信者</h4>
-    <div class="grid" id="typeIg"></div>
-    <p class="note">※ 性別は公開プロフィールなどからの目安です。考え方のタイプは発信内容から編集部が分類しました。</p>
+
+    <div id="pane-type" hidden>
+      <div class="filterset">
+        <div class="row"><span class="k">性別</span><div class="filters" id="genderSeg"><button class="on" data-g="all">すべて</button><button data-g="f">女性</button><button data-g="m">男性</button></div></div>
+        <div class="row"><span class="k">SNS</span><div class="filters" id="platSeg"><button class="on" data-p="all">すべて</button><button data-p="ig">Instagram</button><button data-p="yt">YouTube</button></div></div>
+        <div class="row"><span class="k">タイプ</span><div class="filters" id="typeCards"></div></div>
+      </div>
+      <p class="hint" id="typeDesc"></p>
+      <h3>Creators <span class="n" id="cType"></span></h3>
+      <ul class="people" id="typeIg"></ul>
+      <p class="note">性別は公開プロフィールなどからの目安です。考え方のタイプは発信内容から編集部が分類しました。</p>
+    </div>
   </div>
 </section>
 
 <section id="pickup" hidden>
-  <h2>PICK UP</h2>
-  <h3 class="sec">注目の動画・投稿</h3>
-  <p class="lead" style="margin-bottom:16px">YouTube・Instagramの公式埋め込み機能で表示しています。出典は各カードに記載。</p>
-  <div class="picks" id="picks"></div>
+  <div class="label">Pick up</div>
+  <div class="body">
+    <h2>注目の動画・投稿</h2>
+    <div class="picks" id="picks"></div>
+  </div>
 </section>
 
 <section id="news">
-  <h2>LATEST</h2>
-  <h3 class="sec">最新トピック（すべて）</h3>
-  <ul class="news" id="allNews"></ul>
+  <div class="label">Latest</div>
+  <div class="body">
+    <h2>最新トピック</h2>
+    <ul class="entries" id="allNews"></ul>
+  </div>
 </section>
 
 <section id="basics">
-  <h2>BASICS</h2>
-  <h3 class="sec">基本の考え方 5つ</h3>
-  <ol class="principles">
-    <li><b>減らす基準は「管理の負担」。</b>持っていることより、管理が重いものから手放す。</li>
-    <li><b>ゼロは目指さない。</b>思い出・安全・本当に好きなものは残してよい。</li>
-    <li><b>1つで何役もこなすものを選ぶ。</b>道具の数より使い道の数。</li>
-    <li><b>買う前に「手放す時」を考える。</b>長く使えるか、売れるかで選ぶ。</li>
-    <li><b>定期的に見直す。</b>例：2か月に1回、持ち物と予定・アカウントを点検。</li>
-  </ol>
+  <div class="label">Basics</div>
+  <div class="body">
+    <h2>基本の考え方</h2>
+    <ol class="rules">
+      <li><div><b>減らす基準は、管理の負担。</b><span>持っていることより、管理が重いものから手放す。</span></div></li>
+      <li><div><b>ゼロは目指さない。</b><span>思い出、安全、本当に好きなものは残してよい。</span></div></li>
+      <li><div><b>1つで何役もこなすものを選ぶ。</b><span>道具の数より、使い道の数。</span></div></li>
+      <li><div><b>買う前に、手放す時を考える。</b><span>長く使えるか、売れるかで選ぶ。</span></div></li>
+      <li><div><b>定期的に見直す。</b><span>たとえば2か月に1回、持ち物と予定とアカウントを点検する。</span></div></li>
+    </ol>
+  </div>
 </section>
 
 <section id="faq">
-  <h2>FAQ</h2>
-  <h3 class="sec">よくある質問</h3>
-  <details><summary>ミニマリストとは？</summary><p>本当に必要なもの・好きなものだけを持ち、管理の負担を減らして時間やお金を大切なことに使う暮らし方をする人のこと。</p></details>
-  <details><summary>自分はどのタイプ？</summary><p>「好きなものは残したい」ならゆる派、「家事をラクにしたい」なら効率派、「お金を貯めたい」なら節約派から見るのがおすすめ。上の「男女・タイプ別」で探せます。</p></details>
-  <details><summary>何から始めればいい？</summary><p>後悔しにくい消耗品・紙類・使っていないアプリやアカウントから。服や本は後悔が出やすいので最後に。</p></details>
-  <details><summary>断捨離して後悔する人は多い？</summary><p>1000人調査では64.7%が「後悔ゼロ」。後悔しやすいのは衣類・バッグ・靴、本・雑誌・漫画、CD・DVD・ゲームの順。</p></details>
+  <div class="label">FAQ</div>
+  <div class="body">
+    <h2>よくある質問</h2>
+    <details><summary>ミニマリストとは？</summary><p>本当に必要なもの・好きなものだけを持ち、管理の負担を減らして時間やお金を大切なことに使う暮らし方をする人のこと。</p></details>
+    <details><summary>自分はどのタイプ？</summary><p>好きなものは残したいならゆる派、家事をラクにしたいなら効率派、お金を貯めたいなら節約派から見るのがおすすめ。「男女・タイプ」で探せます。</p></details>
+    <details><summary>何から始めればいい？</summary><p>後悔しにくい消耗品・紙類・使っていないアプリやアカウントから。服や本は後悔が出やすいので最後に。</p></details>
+    <details><summary>断捨離して後悔する人は多い？</summary><p>1000人調査では64.7%が後悔ゼロ。後悔しやすいのは衣類・バッグ・靴、本・雑誌・漫画、CD・DVD・ゲームの順。</p></details>
+  </div>
 </section>
 
 <section id="data">
-  <h2>FOR AI</h2>
-  <h3 class="sec">AI向けデータ（JSON）</h3>
-  <p class="lead">このページの内容を構造化したデータです。ChatGPTやClaudeに貼り付けて質問できます。</p>
-  <pre id="json"></pre>
-  <button class="btn" id="copy">JSONをコピー</button>
+  <div class="label">For AI</div>
+  <div class="body">
+    <h2>AI向けデータ</h2>
+    <p class="data-lead">このページの内容をJSONにまとめています。ChatGPTやClaudeに貼り付けて質問できます。</p>
+    <div class="data-actions">
+      <button id="copy">JSONをコピー</button>
+      <button id="toggleJson" aria-expanded="false" aria-controls="json">中身を見る</button>
+    </div>
+    <pre id="json" hidden></pre>
+  </div>
 </section>
-
 </main>
 
 <footer>
-  <div class="wrap">MINIMAL INDEX — 各情報の著作権は出典元に帰属します。リンク先で原文をご確認ください。</div>
+  <span class="mark">MINIMAL INDEX</span>
+  <span>各情報の著作権は出典元に帰属します。リンク先で原文をご確認ください。</span>
 </footer>
+</div>
 
 <script>
 const THEMES=["部屋・インテリア","服・持ち物","片付け・断捨離","お金・節約","家族・子育て","働き方・デジタル"];
@@ -311,32 +382,48 @@ const blogs=[
 ];
 
 const $=id=>document.getElementById(id);
-const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const newsHTML=list=>list.length?list.map(x=>`<li><span class="date">${x.date}</span><div><a href="${x.url}">${esc(x.title)}</a> <span class="src">${esc(x.source)}</span><p>${esc(x.summary)}</p></div></li>`).join(''):'<li class="empty">該当する記事はまだありません。</li>';
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const gLabel={m:"男性",f:"女性","-":"運営"};
 const urlOf=a=>a.p==="yt"?`https://www.youtube.com/@${encodeURIComponent(a.h)}`:`https://www.instagram.com/${a.h}/`;
-const cardHTML=list=>list.length?list.map(a=>`<a class="card" href="${urlOf(a)}"><span class="p ${a.p}">${a.p==="yt"?"YouTube":"Instagram"}</span><span class="h">@${esc(a.h)}</span><span class="n">${esc(a.n)}</span>${a.s?`<span class="s">登録者 ${a.s}</span>`:''}<span class="d">${esc(a.d)}</span><span class="t">${a.types.map(t=>`<span class="ty">${t}</span>`).join('')}<span>${gLabel[a.g]}</span></span></a>`).join(''):'<p class="empty">該当する発信者はまだいません。</p>';
+const sep='<span class="sep">/</span>';
+const ext=' target="_blank" rel="noopener"';
+
+const newsHTML=list=>list.length?list.map(x=>`<li><a class="item" href="${esc(x.url)}"${ext}><span class="date">${esc(x.date)}</span><div><div class="t">${esc(x.title)}</div><div class="s">${esc(x.summary)}</div><div class="m">${esc(x.source)}</div></div></a></li>`).join(''):'<li class="empty">該当する記事はまだありません。</li>';
+const peopleHTML=list=>list.length?list.map(a=>`<li><a href="${urlOf(a)}"${ext}><span class="who"><span class="t">${esc(a.n)}</span><span class="h">@${esc(a.h)}</span></span><span class="pf">${a.p==="yt"?"YouTube":"Instagram"}</span><span class="s">${esc(a.d)}</span><span class="m">${[a.s?`登録者 ${esc(a.s)}`:'',...a.types.map(esc),gLabel[a.g]].filter(Boolean).join(sep)}</span></a></li>`).join(''):'<li class="empty">該当する発信者はまだいません。</li>';
+const blogHTML=list=>list.length?list.map(x=>`<li><a class="item" href="${esc(x.url)}"${ext}><span class="date">Blog</span><div><div class="t">${esc(x.n)}</div><div class="s">${esc(x.d)}</div></div></a></li>`).join(''):'<li class="empty">該当なし</li>';
+const toggle=(box,b,sel='button')=>box.querySelectorAll(sel).forEach(x=>x.classList.toggle('on',x===b));
+
+/* 掲載数 */
+$('inv').innerHTML=[["記事",news.length],["発信者",creators.length],["ブログ",blogs.length]].map(([k,v])=>`<div><b>${v}</b>${k}</div>`).join('')+`<div><b>11.11</b>更新</div>`;
 
 /* テーマ別 */
 let theme=THEMES[0];
 $('themeChips').innerHTML=THEMES.map((t,i)=>`<button class="${i?'':'on'}" data-t="${t}">${t}</button>`).join('');
 function renderTheme(){
-  $('themeNews').innerHTML=newsHTML(news.filter(x=>x.themes.includes(theme)));
-  $('themeIg').innerHTML=cardHTML(accounts.filter(a=>a.themes.includes(theme)));
-  $('themeYt').innerHTML=cardHTML(channels.filter(a=>a.themes.includes(theme)));
-  const b=blogs.filter(x=>x.themes.includes(theme));
-  $('themeBlogs').innerHTML=b.length?b.map(x=>`<li><a href="${x.url}"><b>${esc(x.n)}</b></a> — ${esc(x.d)}</li>`).join(''):'<li class="empty">該当なし</li>';
+  const n=news.filter(x=>x.themes.includes(theme)),ig=accounts.filter(a=>a.themes.includes(theme)),yt=channels.filter(a=>a.themes.includes(theme)),b=blogs.filter(x=>x.themes.includes(theme));
+  $('themeNews').innerHTML=newsHTML(n);$('cNews').textContent=n.length;
+  $('themeIg').innerHTML=peopleHTML(ig);$('cIg').textContent=ig.length;
+  $('themeYt').innerHTML=peopleHTML(yt);$('cYt').textContent=yt.length;
+  $('themeBlogs').innerHTML=blogHTML(b);$('cBlog').textContent=b.length;
 }
-$('themeChips').onclick=e=>{const b=e.target.closest('button');if(!b)return;theme=b.dataset.t;$('themeChips').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));renderTheme();};
+$('themeChips').onclick=e=>{const b=e.target.closest('button');if(!b)return;theme=b.dataset.t;toggle($('themeChips'),b);renderTheme();};
 
 /* 男女・タイプ別 */
 let gender="all",type="all",plat="all";
-$('typeCards').innerHTML=`<button class="type on" data-y="all"><b>すべて</b><span>全タイプを表示</span></button>`+Object.entries(TYPES).map(([k,v])=>`<button class="type" data-y="${k}"><b>${k}</b><span>${v.split('。')[0]}</span></button>`).join('');
+$('typeCards').innerHTML=`<button class="on" data-y="all">すべて</button>`+Object.keys(TYPES).map(k=>`<button data-y="${k}">${k}</button>`).join('');
 function renderType(){
-  $('typeDesc').textContent=type==="all"?"考え方のタイプを選ぶと、近いアカウントに絞り込めます。":`${type}：${TYPES[type]}`;
-  $('typeIg').innerHTML=cardHTML(creators.filter(a=>(gender==="all"||a.g===gender)&&(type==="all"||a.types.includes(type))&&(plat==="all"||a.p===plat)));
+  $('typeDesc').textContent=type==="all"?"考え方のタイプを選ぶと、近い発信者に絞り込めます。":TYPES[type];
+  const list=creators.filter(a=>(gender==="all"||a.g===gender)&&(type==="all"||a.types.includes(type))&&(plat==="all"||a.p===plat));
+  $('typeIg').innerHTML=peopleHTML(list);$('cType').textContent=list.length;
 }
-$('platSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;plat=b.dataset.p;$('platSeg').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));renderType();};
+$('typeCards').onclick=e=>{const b=e.target.closest('button');if(!b)return;type=b.dataset.y;toggle($('typeCards'),b);renderType();};
+$('genderSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;gender=b.dataset.g;toggle($('genderSeg'),b);renderType();};
+$('platSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;plat=b.dataset.p;toggle($('platSeg'),b);renderType();};
+
+/* タブ */
+document.querySelector('.switch').onclick=e=>{const b=e.target.closest('button');if(!b)return;
+  toggle(document.querySelector('.switch'),b);
+  $('pane-theme').hidden=b.dataset.tab!=="theme";$('pane-type').hidden=b.dataset.tab!=="type";};
 
 /* 注目の動画・投稿 */
 const ytId=u=>{const m=String(u).match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([\w-]{11})/);return m?m[1]:null;};
@@ -344,27 +431,19 @@ function renderPicks(){
   if(!EMBEDS.length)return;
   $('pickup').hidden=false;$('navPick').hidden=false;
   let ig=false;
-  $('picks').innerHTML=EMBEDS.map((x,i)=>{
+  $('picks').innerHTML=EMBEDS.map(x=>{
     if(x.type==="youtube"){const id=ytId(x.url);if(!id)return'';
-      return `<div class="pick"><button class="frame" data-yt="${id}" aria-label="${esc(x.title||'動画')}を再生"><img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span class="play">▶ 再生する</span></button><div class="cap">${esc(x.title||'')}<small>出典：<a href="${esc(x.url)}">${esc(x.credit||'YouTube')}</a>（YouTube）</small></div></div>`;}
+      return `<div class="pick"><button class="frame" data-yt="${id}" aria-label="${esc(x.title||'動画')}を再生"><img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span class="play">PLAY</span></button><div class="cap">${esc(x.title||'')}<small>${esc(x.credit||'YouTube')} / YouTube</small></div></div>`;}
     if(x.type==="instagram"){ig=true;
-      return `<div class="pick"><blockquote class="instagram-media" data-instgrm-permalink="${esc(x.url)}" data-instgrm-version="14"><a href="${esc(x.url)}">Instagramで見る</a></blockquote><div class="cap"><small>出典：<a href="${esc(x.url)}">${esc(x.credit||'Instagram')}</a>（Instagram）</small></div></div>`;}
+      return `<div class="pick"><blockquote class="instagram-media" data-instgrm-permalink="${esc(x.url)}" data-instgrm-version="14"><a href="${esc(x.url)}">Instagramで見る</a></blockquote><div class="cap"><small>${esc(x.credit||'Instagram')} / Instagram</small></div></div>`;}
     return'';}).join('');
   $('picks').onclick=e=>{const b=e.target.closest('[data-yt]');if(!b)return;
     const f=document.createElement('iframe');f.src=`https://www.youtube-nocookie.com/embed/${b.dataset.yt}?autoplay=1`;f.allow="autoplay; encrypted-media; picture-in-picture";f.allowFullscreen=true;f.title="YouTube動画";b.replaceWith(f);};
   if(ig){const s=document.createElement('script');s.async=true;s.src="https://www.instagram.com/embed.js";document.body.appendChild(s);}
 }
-renderPicks();
-$('typeCards').onclick=e=>{const b=e.target.closest('.type');if(!b)return;type=b.dataset.y;$('typeCards').querySelectorAll('.type').forEach(x=>x.classList.toggle('on',x===b));renderType();};
-$('genderSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;gender=b.dataset.g;$('genderSeg').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));renderType();};
 
-/* タブ */
-document.querySelector('.tabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;
-  document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));
-  $('pane-theme').hidden=b.dataset.tab!=="theme";$('pane-type').hidden=b.dataset.tab!=="type";};
-
-$('allNews').innerHTML=newsHTML(news);
-renderTheme();renderType();
+$('allNews').innerHTML=newsHTML([...news].sort((a,b)=>b.date.localeCompare(a.date)));
+renderTheme();renderType();renderPicks();
 
 /* AI向けJSON */
 const data={site:"MINIMAL INDEX",updated:"2026-11-11",language:"ja",
@@ -372,14 +451,15 @@ const data={site:"MINIMAL INDEX",updated:"2026-11-11",language:"ja",
  themes:THEMES,types:TYPES,news,
  instagram:accounts.map(a=>({handle:"@"+a.h,name:a.n,gender:gLabel[a.g],types:a.types,themes:a.themes,description:a.d,url:urlOf(a)})),
  youtube:channels.map(a=>({handle:"@"+a.h,name:a.n,subscribers:a.s||null,gender:gLabel[a.g],types:a.types,themes:a.themes,description:a.d,url:urlOf(a)})),
- featured:EMBEDS,
- blogs};
+ featured:EMBEDS,blogs};
 const json=JSON.stringify(data,null,2);
 $('json').textContent=json;
+$('toggleJson').onclick=e=>{const p=$('json');p.hidden=!p.hidden;e.target.textContent=p.hidden?'中身を見る':'閉じる';e.target.setAttribute('aria-expanded',String(!p.hidden));};
 $('copy').onclick=async e=>{
-  try{await navigator.clipboard.writeText(json);e.target.textContent='コピーしました';}
-  catch(_){e.target.textContent='コピーできませんでした（上のテキストを選択してください）';}
-  setTimeout(()=>e.target.textContent='JSONをコピー',2000);
+  const b=e.target;
+  try{await navigator.clipboard.writeText(json);b.textContent='コピーしました';}
+  catch(_){const p=$('json');p.hidden=false;const r=document.createRange();r.selectNodeContents(p);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='選択しました。コピーしてください';}
+  setTimeout(()=>b.textContent='JSONをコピー',2400);
 };
 </script>
 </body>
