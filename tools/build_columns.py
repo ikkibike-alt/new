@@ -210,9 +210,10 @@ def img(key, prefix, cls="", lazy=True, alt=""):
     return f'<img{c} src="{prefix}images/{f}" width="{w}" height="{h}" alt="{html.escape(alt)}"{l}>'
 
 
-def kick(a):
+def kick(a, date=True):
     return (f'<div class="kick"><span class="no">No.{a["no"]}</span><span>{html.escape(a["theme"])}</span>'
-            f'<span class="date">{a["date"]}</span><span>{a["minutes"]}分で読めます</span></div>')
+            + (f'<span class="date">{a["date"]}</span>' if date else "")
+            + f'<span>{a["minutes"]}分で読めます</span></div>')
 
 
 def main():
@@ -248,7 +249,7 @@ def main():
             page(f'{a["title"]}｜{SITE}', a["lead"], body, "../", "column", ld), encoding="utf-8")
 
     rows = "\n".join(
-        f'<li><a href="{a["slug"]}.html">{img(a["image"], "../", "thumb")}<div>{kick(a)}'
+        f'<li><a href="{a["slug"]}.html">{img(a["image"], "../", "thumb")}<div>{kick(a, date=False)}'
         f'<div class="t">{html.escape(a["title"])}</div><div class="s">{html.escape(a["lead"])}</div></div></a></li>'
         for a in arts)
     body = f"""<main>

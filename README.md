@@ -7,7 +7,7 @@
 
 - `index.html` — トップページ（HTML / CSS / JS）
   - テーマ別・男女/タイプ別の絞り込み
-  - 最新トピック、コラム、基本の考え方、FAQ
+  - 最新トピック、コラム、FAQ
   - schema.org の構造化データ（JSON-LD）と、AI向けJSON（`#ai-data`、画面には非表示）
 - `column/` — コラムページ（自動生成。直接編集しない）
 - `columns/src/*.md` — コラムの原稿
