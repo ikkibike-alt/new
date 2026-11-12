@@ -28,7 +28,7 @@ GitHub Pages で公開する場合は、リポジトリの Settings → Pages �
 
 ## 画像
 
-`images/` のイラストは `tools/illustrations/draw.html` で描いて書き出したものです。
+`images/` のイラスト（`t-*.jpg` は記事のテーマ別サムネイル）は `tools/illustrations/draw.html` で描いて書き出したものです。
 描き直すときは次のコマンドを実行します（Playwright が必要です）。
 
 ```

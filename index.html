@@ -105,7 +105,12 @@ h3 .n{color:var(--faint);letter-spacing:.04em;font-variant-numeric:tabular-nums}
 /* lists */
 .entries{list-style:none}
 .entries li{border-bottom:1px solid var(--rule)}
-.entries a.item,.entries .item{display:grid;grid-template-columns:92px minmax(0,1fr);gap:4px 24px;padding-block:28px}
+.entries a.item,.entries .item{display:grid;grid-template-columns:168px minmax(0,1fr);gap:4px 32px;align-items:start;padding-block:28px}
+.thumb{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:var(--wash);transition:opacity .3s}
+a.item:hover .thumb{opacity:.85}
+.kick{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;margin-bottom:6px}
+.kick .tag{font-size:11px;color:var(--sub);letter-spacing:.08em}
+.entries .t{font-size:17px;line-height:1.65}
 .date{font-family:var(--f-latin);font-weight:300;font-size:12px;color:var(--faint);font-variant-numeric:tabular-nums;letter-spacing:.06em;padding-top:2px}
 .t{font-weight:500;line-height:1.7}
 a.item:hover .t{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
@@ -186,7 +191,9 @@ figcaption b{font-family:var(--f-latin);font-weight:400;font-size:10px;letter-sp
   .top nav{display:none}
 }
 @media (max-width:480px){
-  .entries a.item,.entries .item{grid-template-columns:1fr;gap:2px}
+  .entries a.item,.entries .item{grid-template-columns:104px minmax(0,1fr);gap:4px 16px;padding-block:22px}
+  .entries .t{font-size:15px}
+  .entries .s{display:none}
   .inv{gap:8px 24px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -436,9 +443,12 @@ const urlOf=a=>a.p==="yt"?`https://www.youtube.com/@${encodeURIComponent(a.h)}`:
 const sep='<span class="sep">/</span>';
 const ext=' target="_blank" rel="noopener"';
 
-const newsHTML=list=>list.length?list.map(x=>`<li><a class="item" href="${esc(x.url)}"${ext}><span class="date">${esc(x.date)}</span><div><div class="t">${esc(x.title)}</div><div class="s">${esc(x.summary)}</div><div class="m">${esc(x.source)}</div></div></a></li>`).join(''):'<li class="empty">該当する記事はまだありません。</li>';
+/* テーマごとのサムネイル */
+const THUMB={"部屋・インテリア":"room","服・持ち物":"clothes","片付け・断捨離":"tidy","お金・節約":"money","家族・子育て":"family","働き方・デジタル":"work"};
+const thumb=(th,cur)=>{const k=(cur&&th.includes(cur))?cur:th[0];return `<img class="thumb" src="images/t-${THUMB[k]}.jpg" width="640" height="480" alt="" loading="lazy">`;};
+const newsHTML=(list,cur)=>list.length?list.map(x=>`<li><a class="item" href="${esc(x.url)}"${ext}>${thumb(x.themes,cur)}<div><div class="kick"><span class="date">${esc(x.date)}</span><span class="tag">${esc(x.themes.join(' / '))}</span></div><div class="t">${esc(x.title)}</div><div class="s">${esc(x.summary)}</div><div class="m">${esc(x.source)}</div></div></a></li>`).join(''):'<li class="empty">該当する記事はまだありません。</li>';
 const peopleHTML=list=>list.length?list.map(a=>`<li><a href="${urlOf(a)}"${ext}><span class="who"><span class="t">${esc(a.n)}</span><span class="h">@${esc(a.h)}</span></span><span class="pf">${a.p==="yt"?"YouTube":"Instagram"}</span><span class="s">${esc(a.d)}</span><span class="m">${[a.s?`登録者 ${esc(a.s)}`:'',...a.types.map(esc),gLabel[a.g]].filter(Boolean).join(sep)}</span></a></li>`).join(''):'<li class="empty">該当する発信者はまだいません。</li>';
-const blogHTML=list=>list.length?list.map(x=>`<li><a class="item" href="${esc(x.url)}"${ext}><span class="date">Blog</span><div><div class="t">${esc(x.n)}</div><div class="s">${esc(x.d)}</div></div></a></li>`).join(''):'<li class="empty">該当なし</li>';
+const blogHTML=(list,cur)=>list.length?list.map(x=>`<li><a class="item" href="${esc(x.url)}"${ext}>${thumb(x.themes,cur)}<div><div class="kick"><span class="date">BLOG</span><span class="tag">${esc(x.themes.join(' / '))}</span></div><div class="t">${esc(x.n)}</div><div class="s">${esc(x.d)}</div></div></a></li>`).join(''):'<li class="empty">該当なし</li>';
 const toggle=(box,b,sel='button')=>box.querySelectorAll(sel).forEach(x=>x.classList.toggle('on',x===b));
 
 /* 掲載数 */
@@ -449,10 +459,10 @@ let theme=THEMES[0];
 $('themeChips').innerHTML=THEMES.map((t,i)=>`<button class="${i?'':'on'}" data-t="${t}">${t}</button>`).join('');
 function renderTheme(){
   const n=news.filter(x=>x.themes.includes(theme)),ig=accounts.filter(a=>a.themes.includes(theme)),yt=channels.filter(a=>a.themes.includes(theme)),b=blogs.filter(x=>x.themes.includes(theme));
-  $('themeNews').innerHTML=newsHTML(n);$('cNews').textContent=n.length;
+  $('themeNews').innerHTML=newsHTML(n,theme);$('cNews').textContent=n.length;
   $('themeIg').innerHTML=peopleHTML(ig);$('cIg').textContent=ig.length;
   $('themeYt').innerHTML=peopleHTML(yt);$('cYt').textContent=yt.length;
-  $('themeBlogs').innerHTML=blogHTML(b);$('cBlog').textContent=b.length;
+  $('themeBlogs').innerHTML=blogHTML(b,theme);$('cBlog').textContent=b.length;
 }
 $('themeChips').onclick=e=>{const b=e.target.closest('button');if(!b)return;theme=b.dataset.t;toggle($('themeChips'),b);renderTheme();};
 
