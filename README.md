@@ -25,3 +25,12 @@ GitHub Pages で公開する場合は、リポジトリの Settings → Pages �
 - `channels` — YouTube チャンネル
 - `blogs` — ブログ・メディア
 - `EMBEDS` — 注目の動画・投稿（URLを足すと「PICK UP」欄が表示されます）
+
+## 画像
+
+`images/` のイラストは `tools/illustrations/draw.html` で描いて書き出したものです。
+描き直すときは次のコマンドを実行します（Playwright が必要です）。
+
+```
+node tools/illustrations/render.js "$PWD/tools/illustrations/draw.html" images
+```
