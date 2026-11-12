@@ -5,10 +5,12 @@
 
 ## 構成
 
-- `index.html` — サイト本体（1ファイル完結。HTML / CSS / JS）
+- `index.html` — トップページ（HTML / CSS / JS）
   - テーマ別・男女/タイプ別の絞り込み
-  - 最新トピック、基本の考え方、FAQ
-  - schema.org の構造化データ（JSON-LD）と、AI向けJSONのコピー機能
+  - 最新トピック、コラム、基本の考え方、FAQ
+  - schema.org の構造化データ（JSON-LD）と、AI向けJSON（`#ai-data`、画面には非表示）
+- `column/` — コラムページ（自動生成。直接編集しない）
+- `columns/src/*.md` — コラムの原稿
 
 ## 見方
 
@@ -25,6 +27,14 @@ GitHub Pages で公開する場合は、リポジトリの Settings → Pages �
 - `channels` — YouTube チャンネル
 - `blogs` — ブログ・メディア
 - `EMBEDS` — 注目の動画・投稿（URLを足すと「PICK UP」欄が表示されます）
+- `news` / `blogs` の各項目に `img:"画像URL"` を足すと、イラストの代わりにその画像を表示します
+  （掲載許可を得た画像に限って使ってください）
+
+## コラムの追加
+
+1. `columns/src/` に `11.md` のように原稿を追加（先頭の `---` の間にタイトルなどを書く。既存の原稿を参考に）
+2. `python3 tools/build_columns.py` を実行
+   → `column/` のページと、トップのコラム欄が更新されます
 
 ## 画像
 
