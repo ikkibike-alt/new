@@ -1,0 +1,105 @@
+# MINIMAL INDEX
+
+> ミニマリスト（持たない暮らし）に関する最新トピック、Instagram・YouTubeの発信者、ブログ、オリジナルコラムを、テーマ別・男女別・考え方のタイプ別に整理した日本語の情報サイト。最終更新: 2026-11-13
+
+## いまのミニマリズム（要約）
+- 「ゼロを目指さない」が主流に。全部捨てるより、管理が負担なものだけを減らす「ゆるミニマリスト」型が広がっている。
+- モノから働き方・デジタルへ。仕事でも「何を手放すか」を考える「キャリアミニマリズム」や、使わないアカウントの整理が話題。
+- 見せる部屋より、暮らしやすい家。「映え」より、自分らしく長く使えるものを選ぶ流れ。
+
+## ページ
+- [最新トピック](https://example.com/news/): 記事・ニュース・話題の動画 20件
+- [発信者](https://example.com/creators/): Instagram・YouTube 29件（男女・SNS・タイプで分類）
+- [コラム](https://example.com/column/): 編集部のオリジナルコラム 10本
+- [はじめての方へ](https://example.com/guide/): 基本の考え方、タイプ、FAQ
+
+## テーマ
+- [部屋・インテリア](https://example.com/themes/room/): 少ないもので整える部屋づくりと、ルームツアーの最新情報。
+- [服・持ち物](https://example.com/themes/wear/): 少ない服で回すワードローブと、長く使える持ち物選び。
+- [片付け・断捨離](https://example.com/themes/declutter/): 後悔しない手放し方と、散らからない仕組みづくり。
+- [お金・節約](https://example.com/themes/money/): 持たない暮らしと家計管理。出費を減らすより「満足」を軸に。
+- [家族・子育て](https://example.com/themes/family/): 子どもや家族がいても続けられるミニマルな暮らし。
+- [働き方・デジタル](https://example.com/themes/work/): キャリアミニマリズム、デジタル断捨離、発信のトレンド。
+
+## コラム
+- [No.01 ミニマリストとは、物を減らす人ではなく「管理を減らす人」](https://example.com/column/what-is-minimalism): 部屋が空っぽであることは、ミニマリストの条件ではありません。大切なのは、持ち物を管理する手間と気持ちの負担を減らすこと。最初に知っておきたい考え方をまとめます。
+- [No.02 何から手放す？ 後悔しにくい順番で進める片付け](https://example.com/column/where-to-start): 勢いで捨てて後悔するのは、たいてい「思い入れのあるもの」から手をつけたとき。判断しやすいものから順番に進めれば、迷いも後悔もぐっと減ります。
+- [No.03 服を減らすなら、まず自分の「制服」を決める](https://example.com/column/wardrobe-uniform): 毎朝の服選びに迷うのは、服が多すぎるからではなく「自分の定番」が決まっていないから。少ない服で毎日を回すための考え方を紹介します。
+- [No.04 買う前に考えたい3つの問い](https://example.com/column/before-you-buy): 物を減らしても、同じペースで買っていればすぐに元通り。大切なのは入口を整えることです。買い物の前に、ほんの少し立ち止まるための3つの問いを紹介します。
+- [No.05 家族と暮らすミニマリズムは、自分の持ち物から始める](https://example.com/column/minimalism-with-family): 一人なら自分の判断で進められる片付けも、家族がいると話は別。家族の物には手をつけず、自分の物と共有スペースから始めるのが、うまくいくコツです。
+- [No.06 お金のミニマリズムは、固定費の見直しから](https://example.com/column/money-and-minimalism): 毎日のコーヒー代を我慢するより、毎月自動で出ていくお金を見直すほうが効果は大きく、続けやすい。持ち物と同じように、お金の流れもシンプルにしてみましょう。
+- [No.07 デジタルミニマリズム入門：アプリ・通知・アカウントの整理](https://example.com/column/digital-minimalism): 部屋は片付いているのに、なぜか気持ちが落ち着かない。その原因はスマホの中にあるかもしれません。目に見えないデジタルの持ち物も、物と同じように整理できます。
+- [No.08 何も置かない場所をひとつつくる](https://example.com/column/empty-surfaces): 家じゅうを片付けるのは大変でも、「ここだけは何も置かない」という場所をひとつ決めるのは今日からできます。床、テーブル、キッチンの天板。小さな余白が暮らしを変えます。
+- [No.09 本と思い出の品は、急いで手放さなくていい](https://example.com/column/books-and-memories): 片付けでいちばん手が止まるのが、本と思い出の品。後悔しやすいものだからこそ、急がず、自分なりの残し方を決めることが大切です。
+- [No.10 リバウンドしないための「定期点検」のすすめ](https://example.com/column/keep-it-simple): 一度すっきりさせた部屋も、何もしなければ少しずつ物が戻ってきます。大がかりな片付けを繰り返さずに済むよう、短い点検を習慣にしましょう。
+
+## 考え方のタイプ
+- ゆる派: 好きなものは残し、無理なく減らす。いま一番多いスタイル。
+- ストイック派: 家具や日用品まで極限まで減らす。究極の身軽さを求める人に。
+- 豊かさ派: 減らしてできた余白で暮らしを楽しむ。「シンプリスト」とも。
+- 効率派: 家事や片付けをラクにするために減らす。忙しい人・家族向け。
+- 節約派: 持たない暮らしでお金を貯める。家計とセットで考えたい人に。
+- 思想派: 生き方・価値観としてミニマリズムを考える。入門や海外の発信も。
+
+## 最新トピック
+- 2026-11-06 [来年の目標の前に「何を手放すか」を決める](https://forbesjapan.com/articles/detail/107818) (Forbes JAPAN): 年末のキャリア振り返りは、追いかけるものより先に手放すものを決めよう、という提案。
+- 2026-11-05 [少ない道具を長持ちさせる使い方と手入れ](https://minimalist-fudeko.com/) (筆子ジャーナル): 数を減らした後は、残した台所道具やPCを傷めず長く使う視点へ。
+- 2026-11-04 [3年間毎日使うクッカーを愛用する理由](https://minimalist-sora.com/) (ミニマリストsoraのブログ): 1つの道具を多用途に使うミニマリストの定番の考え方。
+- 2026-11-02 [転勤族ミニマリストの「やめた家事」](https://www.goodrooms.jp/journal/) (goodroom journal): 備え付け収納や大掃除を手放した実例。10月には5人のルームツアー記事も。
+- 2026-11 [ミニマリスト系YouTuberランキング、1位は登録者22万人](https://influencer.tri-as.co.jp/youtube/minimalist.html) (インフルエンサーラボ): 1位「少ない物ですっきり暮らす」（22万人）、2位「ミニマリストしぶ」（21.4万人）。TOP30の83%が直近90日に投稿。
+- 2026-10-31 [よその家計簿の金額は真似しない](https://minimalist-fudeko.com/) (筆子ジャーナル): 予算は他人の数字ではなく、自分が続けられる額で決める。
+- 2026-10-24 [収入が増えたのにお金が残らない？](https://minimalist-fudeko.com/) (筆子ジャーナル): 満足していない出費だけを以前のやり方に戻す、という見直し方。
+- 2026-10-15 [2026年ミニマリストの秋服](https://minimalist-sora.com/) (ミニマリストsoraのブログ): 少ない服でバリエーションを増やす工夫。
+- 2026-10-06 [30代ミニマリスト男性のワンルームが「ホテルみたい」](https://nlab.itmedia.co.jp/cont/articles/4034162/) (ねとらぼ): ミニマリストsinさんの新居ルームツアーが33万回以上再生。
+- 2026-09-30 [引っ越し当日に荷造り開始、13分で完了](https://nlab.itmedia.co.jp/cont/articles/4030690/) (ねとらぼ): Tokimaru Tanakaさんが14㎡の部屋から引っ越す動画が19万回以上再生。
+- 2026-08-04 [Z世代を超えて広がる「キャリアミニマリズム」](https://forbesjapan.com/articles/detail/102229) (Forbes JAPAN): Glassdoor調査でZ世代の68%が「給与や肩書のためでなければ管理職を目指さない」と回答。
+- 2026-08 [“ゼロを目指さない”ミニマリズム](https://www.roomie.jp/2026/08/1857101/) (ROOMIE): 多拠点居住サービスをきっかけに物を減らしつつ、好きなものは残す暮らし。
+- 2026-08 [ミニマリスト12年目の“持っていないもの”195選](https://note.com/migalu_minimal/n/n40f7b33384a6) (note / みがる): 「全部捨てよう」ではなく、管理の負担になっているものを見つけるためのリスト。
+- 2026-07-29 [築48年の団地で1人暮らし、2年後の部屋](https://nlab.itmedia.co.jp/cont/articles/3953224/) (ねとらぼ): 田村美葉さんが「この2年で買わなくなったもの」をルームツアーで紹介。
+- 2026-07-11 [4人家族の“ミニマムな心地よい家”](https://nlab.itmedia.co.jp/cont/articles/3904962/) (ねとらぼ): 「ズボラだから持たない」ママのルームツアーと、家事を減らすコツ。
+- 2026-07 [Minimalist Takeruのチャンネルが「ミニマリストの暮らし」に](https://www.youtube.com/c/MinimalistTakeru) (YouTube): 登録者13万人のチャンネルを、ミニマリストTOKUNOさんが引き継いで名称変更。
+- 2026-06-02 [3人家族がすっきり暮らす家のルームツアー](https://nlab.itmedia.co.jp/cont/articles/3856118/) (ねとらぼ): ゆるっとミニマルなぴーこさんの自宅。動線に沿った収納が話題。
+- 2026-04 [断捨離で後悔したもの、1000人調査](https://ameblo.jp/happymichelle24/entry-12963563870.html) (みしぇる（ブログ）): 64.7%が「後悔ゼロ」。後悔1位は衣類・バッグ・靴（14.6%）。
+- 2026-03-28 [「見せる部屋」から「生きる家」へ](https://forbesjapan.com/articles/detail/94663) (Forbes JAPAN): 2010年代のオールベージュ的ミニマル美学から、自分らしさ重視の住まいへ。
+- 2026 [2026年は「リセットの年」](https://www.newsweekjapan.jp/articles/-/58185) (Newsweek日本版): リセール前提のワードローブやアナログ趣味など、意図を持って暮らす方向へ。
+
+## 発信者
+- [エヌケン](https://www.instagram.com/nken_second/) — Instagram @nken_second / 男性 / タイプ: 豊かさ派 / テーマ: 部屋・インテリア、片付け・断捨離 — シンプリスト。1K一人暮らしで片付け・収納・自炊・掃除など「暮らしの楽しみ方」を発信。
+- [ミニマリストしぶ](https://www.instagram.com/minimalist_sibu/) — Instagram @minimalist_sibu / 男性 / タイプ: ストイック派 / テーマ: 服・持ち物、部屋・インテリア — 余白が好きな男性ミニマリスト。座右の銘は「少数精鋭」。
+- [The Minimalists](https://www.instagram.com/theminimalists/) — Instagram @theminimalists / 男性 / タイプ: 思想派 / テーマ: 働き方・デジタル — 米国の男性2人組。ポッドキャストや映像作品でミニマリズムの考え方を発信。
+- [カヨ](https://www.instagram.com/minimalist_kayo/) — Instagram @minimalist_kayo / 女性 / タイプ: 節約派、ゆる派 / テーマ: お金・節約、家族・子育て — 40代・賃貸・1児のママ。整理収納アドバイザー1級。持たない暮らしでお金が貯まる。
+- [kono](https://www.instagram.com/_konolife/) — Instagram @_konolife / 女性 / タイプ: ゆる派 / テーマ: 服・持ち物、家族・子育て — ゆるミニマリスト。年間30着のワードローブと、子どもがいてもスッキリした暮らし。
+- [Nozomi](https://www.instagram.com/nozominimam/) — Instagram @nozominimam / 女性 / タイプ: ストイック派、効率派 / テーマ: 家族・子育て、部屋・インテリア — 2児のママ。コップや各部屋のゴミ箱もない暮らし。著書『ものも家事も最低限。』
+- [ぴーこ](https://www.instagram.com/piiiko_minimal/) — Instagram @piiiko_minimal / 女性 / タイプ: ゆる派 / テーマ: 家族・子育て、服・持ち物、お金・節約 — 夫と娘との3人暮らし。ゆるっとミニマルな日常と、少ない服・お金の話。
+- [あすか](https://www.instagram.com/minimalist__ask/) — Instagram @minimalist__ask / 女性 / タイプ: ゆる派 / テーマ: 部屋・インテリア — ゆるミニマリスト。無理なく続けられるシンプルな暮らし。
+- [ミニマリストますみ](https://www.instagram.com/minimal_kurashi/) — Instagram @minimal_kurashi / 女性 / タイプ: ゆる派、効率派 / テーマ: 家族・子育て、片付け・断捨離 — ママに贈るやさしいミニマリズム。片付け後の暮らしや考え方。
+- [香村薫](https://www.instagram.com/minimalife_kaoru/) — Instagram @minimalife_kaoru / 女性 / タイプ: 効率派 / テーマ: 片付け・断捨離、家族・子育て — 「LINE片づけ」主宰。トヨタ式おうち片づけなど著書多数。
+- [主婦ミニマリストかおなし](https://www.instagram.com/minimalist_kaonashi/) — Instagram @minimalist_kaonashi / 女性 / タイプ: 効率派、ゆる派 / テーマ: 片付け・断捨離、家族・子育て — 片付けが苦手な主婦が、ミニマリストの暮らしを取り入れていく過程を発信。
+- [ミニマリストあぽん](https://www.instagram.com/minimalist_apon/) — Instagram @minimalist_apon / 女性 / タイプ: 効率派 / テーマ: 片付け・断捨離 — 「捨てて気楽に暮らす」がテーマ。手放すコツを分かりやすく。
+- [あやじま](https://www.instagram.com/aya.jima/) — Instagram @aya.jima / 女性 / タイプ: 豊かさ派 / テーマ: 服・持ち物 — 人気ミニマリスト。持ち物や暮らしのアイデア。
+- [magu](https://www.instagram.com/magu.09/) — Instagram @magu.09 / 女性 / タイプ: 豊かさ派 / テーマ: 部屋・インテリア — ミニマルで整った部屋と暮らしの写真。
+- [ミニマリストの教科書](https://www.instagram.com/minimalisttextboo/) — Instagram @minimalisttextboo / 運営・ユニット / タイプ: 思想派 / テーマ: 片付け・断捨離 — 初心者向けにミニマリズムの基本をまとめて発信。
+- [少ない物ですっきり暮らす](https://www.youtube.com/@%E5%B0%91%E3%81%AA%E3%81%84%E7%89%A9%E3%81%A7%E3%81%99%E3%81%A3%E3%81%8D%E3%82%8A%E6%9A%AE%E3%82%89%E3%81%99) — YouTube @少ない物ですっきり暮らす / 登録者22万人 / 運営・ユニット / タイプ: 効率派 / テーマ: 家族・子育て、部屋・インテリア — 家族4人で暮らすミニマリストのチャンネル。ミニマリスト系で登録者数1位。
+- [ミニマリストしぶ](https://www.youtube.com/@minimalist_sibu) — YouTube @minimalist_sibu / 登録者21.4万人 / 男性 / タイプ: ストイック派 / テーマ: 服・持ち物、部屋・インテリア — 1995年生まれ・福岡出身。ブログから始まった代表的な男性ミニマリスト。
+- [mai minimalism](https://www.youtube.com/@mai.minimalism) — YouTube @mai.minimalism / 登録者16.5万人 / 女性 / タイプ: ゆる派 / テーマ: 部屋・インテリア — 夫と賃貸1LDKで暮らすミニマリスト。
+- [ミニマリストの暮らし](https://www.youtube.com/@minimalist320) — YouTube @minimalist320 / 登録者13.5万人 / 運営・ユニット / タイプ: 思想派、節約派 / テーマ: お金・節約、働き方・デジタル — 旧Minimalist Takeru。持ち物・お金・習慣の手放し方。2026年7月にTOKUNOさんが継承。
+- [ミニマリストゆみにゃん](https://www.youtube.com/@yuminyan_mini) — YouTube @yuminyan_mini / 登録者13.3万人 / 女性 / タイプ: 節約派 / テーマ: お金・節約 — 東京で一人暮らしする節約ミニマリスト。
+- [よしみ子のおひとり様ライフ](https://www.youtube.com/@yoshimiko_desu_) — YouTube @yoshimiko_desu_ / 登録者12.9万人 / 女性 / タイプ: 豊かさ派 / テーマ: 服・持ち物 — 一人暮らしを楽しむミニマリスト。持ち物紹介も人気。
+- [Mochi.ミニマリストになりたい私](https://www.youtube.com/@mochi.minimum) — YouTube @mochi.minimum / 登録者8.6万人 / 女性 / タイプ: ゆる派 / テーマ: 部屋・インテリア — 30代女性。ミニマリストを目指す過程と自作家具のある部屋。
+- [ミニマリスト Nozomi](https://www.youtube.com/@nozominimam) — YouTube @nozominimam / 登録者8.0万人 / 女性 / タイプ: ストイック派、効率派 / テーマ: 家族・子育て — ミニマリスト歴12年。子どもと暮らしながら物も家事も減らす。
+- [ミニマリストsin](https://www.youtube.com/@sinminimallife) — YouTube @sinminimallife / 登録者7.0万人 / 男性 / タイプ: 思想派、豊かさ派 / テーマ: 服・持ち物、部屋・インテリア — 30代男性・元アパレル。「普通」が生きづらい人へのミニマルライフ。
+- [あつしのぶろぐ / ゆるく生きる](https://www.youtube.com/@atsushivlog) — YouTube @atsushivlog / 登録者6.2万人 / 男性 / タイプ: ゆる派、節約派 / テーマ: 部屋・インテリア、お金・節約 — ワンルームでゆるく暮らす男性ミニマリスト。
+- [ミニマムな心地よい暮らし](https://www.youtube.com/@miemalist) — YouTube @miemalist / 登録者4.8万人 / 女性 / タイプ: 効率派 / テーマ: 家族・子育て — 4人家族と犬。「ズボラだから持たない」家事を減らす工夫。
+- [あすかのミニマルぐらし。](https://www.youtube.com/@minimalist__ask) — YouTube @minimalist__ask / 登録者3.3万人 / 女性 / タイプ: ゆる派 / テーマ: 部屋・インテリア — 東京の白を基調としたミニマルな部屋。
+- [Tokimaru Tanaka](https://www.youtube.com/@tokimaru) — YouTube @tokimaru / 男性 / タイプ: ストイック派 / テーマ: 部屋・インテリア — 14㎡の部屋で暮らす男性ミニマリスト。13分で終わる引っ越し荷造りが話題。
+- [団地で暮らす旅好きミニマリスト](https://www.youtube.com/@tamuramiha) — YouTube @tamuramiha / 女性 / タイプ: ゆる派 / テーマ: 部屋・インテリア、お金・節約 — 築48年の団地で一人暮らしする40代女性。買わなくなったものの話。
+
+## FAQ
+- Q: ミニマリストとは？ A: 本当に必要なもの・好きなものだけを持ち、管理の負担を減らして時間やお金を大切なことに使う暮らし方をする人のこと。くわしくはコラム No.01へ。
+- Q: 自分はどのタイプ？ A: 好きなものは残したいならゆる派、家事をラクにしたいなら効率派、お金を貯めたいなら節約派から見るのがおすすめ。このページの3問診断でも確かめられます。
+- Q: 何から始めればいい？ A: 後悔しにくい消耗品・紙類・使っていないアプリやアカウントから。服や本は後悔が出やすいので最後に。順番はコラム No.02にまとめています。
+- Q: 断捨離して後悔する人は多い？ A: 1000人調査では64.7%が「後悔ゼロ」。後悔しやすいのは衣類・バッグ・靴（14.6%）、本・雑誌・漫画（9.8%）、CD・DVD・ゲーム（7.5%）。
+- Q: 家族がいてもできる？ A: できます。自分のものと共有スペースから始め、家族のものは本人に任せるのが基本。家族・子育てのページも参考に。
+
+## Optional
+- [全データ（JSON）](https://example.com/data.json)

@@ -1,0 +1,925 @@
+{
+  "site": "MINIMAL INDEX",
+  "url": null,
+  "updated": "2026-11-13",
+  "language": "ja",
+  "summary": [
+    "「ゼロを目指さない」が主流に。全部捨てるより、管理が負担なものだけを減らす「ゆるミニマリスト」型が広がっている。",
+    "モノから働き方・デジタルへ。仕事でも「何を手放すか」を考える「キャリアミニマリズム」や、使わないアカウントの整理が話題。",
+    "見せる部屋より、暮らしやすい家。「映え」より、自分らしく長く使えるものを選ぶ流れ。"
+  ],
+  "themes": [
+    {
+      "slug": "room",
+      "name": "部屋・インテリア",
+      "lead": "少ないもので整える部屋づくりと、ルームツアーの最新情報。"
+    },
+    {
+      "slug": "wear",
+      "name": "服・持ち物",
+      "lead": "少ない服で回すワードローブと、長く使える持ち物選び。"
+    },
+    {
+      "slug": "declutter",
+      "name": "片付け・断捨離",
+      "lead": "後悔しない手放し方と、散らからない仕組みづくり。"
+    },
+    {
+      "slug": "money",
+      "name": "お金・節約",
+      "lead": "持たない暮らしと家計管理。出費を減らすより「満足」を軸に。"
+    },
+    {
+      "slug": "family",
+      "name": "家族・子育て",
+      "lead": "子どもや家族がいても続けられるミニマルな暮らし。"
+    },
+    {
+      "slug": "work",
+      "name": "働き方・デジタル",
+      "lead": "キャリアミニマリズム、デジタル断捨離、発信のトレンド。"
+    }
+  ],
+  "types": [
+    {
+      "slug": "yuru",
+      "name": "ゆる派",
+      "short": "好きなものは残し、無理なく減らす",
+      "long": "好きなものは残し、無理なく減らす。いま一番多いスタイル。"
+    },
+    {
+      "slug": "stoic",
+      "name": "ストイック派",
+      "short": "家具や日用品まで極限まで減らす",
+      "long": "家具や日用品まで極限まで減らす。究極の身軽さを求める人に。"
+    },
+    {
+      "slug": "rich",
+      "name": "豊かさ派",
+      "short": "減らした余白で暮らしを楽しむ",
+      "long": "減らしてできた余白で暮らしを楽しむ。「シンプリスト」とも。"
+    },
+    {
+      "slug": "efficient",
+      "name": "効率派",
+      "short": "家事や片付けをラクにするために減らす",
+      "long": "家事や片付けをラクにするために減らす。忙しい人・家族向け。"
+    },
+    {
+      "slug": "saving",
+      "name": "節約派",
+      "short": "持たない暮らしでお金を貯める",
+      "long": "持たない暮らしでお金を貯める。家計とセットで考えたい人に。"
+    },
+    {
+      "slug": "thought",
+      "name": "思想派",
+      "short": "生き方としてミニマリズムを考える",
+      "long": "生き方・価値観としてミニマリズムを考える。入門や海外の発信も。"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-11-06",
+      "title": "来年の目標の前に「何を手放すか」を決める",
+      "source": "Forbes JAPAN",
+      "url": "https://forbesjapan.com/articles/detail/107818",
+      "summary": "年末のキャリア振り返りは、追いかけるものより先に手放すものを決めよう、という提案。",
+      "themes": [
+        "働き方・デジタル"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "title": "少ない道具を長持ちさせる使い方と手入れ",
+      "source": "筆子ジャーナル",
+      "url": "https://minimalist-fudeko.com/",
+      "summary": "数を減らした後は、残した台所道具やPCを傷めず長く使う視点へ。",
+      "themes": [
+        "服・持ち物",
+        "お金・節約"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "title": "3年間毎日使うクッカーを愛用する理由",
+      "source": "ミニマリストsoraのブログ",
+      "url": "https://minimalist-sora.com/",
+      "summary": "1つの道具を多用途に使うミニマリストの定番の考え方。",
+      "themes": [
+        "服・持ち物"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "title": "転勤族ミニマリストの「やめた家事」",
+      "source": "goodroom journal",
+      "url": "https://www.goodrooms.jp/journal/",
+      "summary": "備え付け収納や大掃除を手放した実例。10月には5人のルームツアー記事も。",
+      "themes": [
+        "部屋・インテリア",
+        "片付け・断捨離"
+      ]
+    },
+    {
+      "date": "2026-11",
+      "title": "ミニマリスト系YouTuberランキング、1位は登録者22万人",
+      "source": "インフルエンサーラボ",
+      "url": "https://influencer.tri-as.co.jp/youtube/minimalist.html",
+      "summary": "1位「少ない物ですっきり暮らす」（22万人）、2位「ミニマリストしぶ」（21.4万人）。TOP30の83%が直近90日に投稿。",
+      "themes": [
+        "働き方・デジタル"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "title": "よその家計簿の金額は真似しない",
+      "source": "筆子ジャーナル",
+      "url": "https://minimalist-fudeko.com/",
+      "summary": "予算は他人の数字ではなく、自分が続けられる額で決める。",
+      "themes": [
+        "お金・節約"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "title": "収入が増えたのにお金が残らない？",
+      "source": "筆子ジャーナル",
+      "url": "https://minimalist-fudeko.com/",
+      "summary": "満足していない出費だけを以前のやり方に戻す、という見直し方。",
+      "themes": [
+        "お金・節約"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "title": "2026年ミニマリストの秋服",
+      "source": "ミニマリストsoraのブログ",
+      "url": "https://minimalist-sora.com/",
+      "summary": "少ない服でバリエーションを増やす工夫。",
+      "themes": [
+        "服・持ち物"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "30代ミニマリスト男性のワンルームが「ホテルみたい」",
+      "source": "ねとらぼ",
+      "url": "https://nlab.itmedia.co.jp/cont/articles/4034162/",
+      "summary": "ミニマリストsinさんの新居ルームツアーが33万回以上再生。",
+      "themes": [
+        "部屋・インテリア"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "title": "引っ越し当日に荷造り開始、13分で完了",
+      "source": "ねとらぼ",
+      "url": "https://nlab.itmedia.co.jp/cont/articles/4030690/",
+      "summary": "Tokimaru Tanakaさんが14㎡の部屋から引っ越す動画が19万回以上再生。",
+      "themes": [
+        "部屋・インテリア",
+        "片付け・断捨離"
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "title": "Z世代を超えて広がる「キャリアミニマリズム」",
+      "source": "Forbes JAPAN",
+      "url": "https://forbesjapan.com/articles/detail/102229",
+      "summary": "Glassdoor調査でZ世代の68%が「給与や肩書のためでなければ管理職を目指さない」と回答。",
+      "themes": [
+        "働き方・デジタル"
+      ]
+    },
+    {
+      "date": "2026-08",
+      "title": "“ゼロを目指さない”ミニマリズム",
+      "source": "ROOMIE",
+      "url": "https://www.roomie.jp/2026/08/1857101/",
+      "summary": "多拠点居住サービスをきっかけに物を減らしつつ、好きなものは残す暮らし。",
+      "themes": [
+        "部屋・インテリア"
+      ]
+    },
+    {
+      "date": "2026-08",
+      "title": "ミニマリスト12年目の“持っていないもの”195選",
+      "source": "note / みがる",
+      "url": "https://note.com/migalu_minimal/n/n40f7b33384a6",
+      "summary": "「全部捨てよう」ではなく、管理の負担になっているものを見つけるためのリスト。",
+      "themes": [
+        "片付け・断捨離",
+        "家族・子育て"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "title": "築48年の団地で1人暮らし、2年後の部屋",
+      "source": "ねとらぼ",
+      "url": "https://nlab.itmedia.co.jp/cont/articles/3953224/",
+      "summary": "田村美葉さんが「この2年で買わなくなったもの」をルームツアーで紹介。",
+      "themes": [
+        "部屋・インテリア",
+        "お金・節約"
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "title": "4人家族の“ミニマムな心地よい家”",
+      "source": "ねとらぼ",
+      "url": "https://nlab.itmedia.co.jp/cont/articles/3904962/",
+      "summary": "「ズボラだから持たない」ママのルームツアーと、家事を減らすコツ。",
+      "themes": [
+        "家族・子育て",
+        "部屋・インテリア"
+      ]
+    },
+    {
+      "date": "2026-07",
+      "title": "Minimalist Takeruのチャンネルが「ミニマリストの暮らし」に",
+      "source": "YouTube",
+      "url": "https://www.youtube.com/c/MinimalistTakeru",
+      "summary": "登録者13万人のチャンネルを、ミニマリストTOKUNOさんが引き継いで名称変更。",
+      "themes": [
+        "働き方・デジタル"
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "title": "3人家族がすっきり暮らす家のルームツアー",
+      "source": "ねとらぼ",
+      "url": "https://nlab.itmedia.co.jp/cont/articles/3856118/",
+      "summary": "ゆるっとミニマルなぴーこさんの自宅。動線に沿った収納が話題。",
+      "themes": [
+        "家族・子育て",
+        "部屋・インテリア"
+      ]
+    },
+    {
+      "date": "2026-04",
+      "title": "断捨離で後悔したもの、1000人調査",
+      "source": "みしぇる（ブログ）",
+      "url": "https://ameblo.jp/happymichelle24/entry-12963563870.html",
+      "summary": "64.7%が「後悔ゼロ」。後悔1位は衣類・バッグ・靴（14.6%）。",
+      "themes": [
+        "片付け・断捨離",
+        "服・持ち物"
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "title": "「見せる部屋」から「生きる家」へ",
+      "source": "Forbes JAPAN",
+      "url": "https://forbesjapan.com/articles/detail/94663",
+      "summary": "2010年代のオールベージュ的ミニマル美学から、自分らしさ重視の住まいへ。",
+      "themes": [
+        "部屋・インテリア"
+      ]
+    },
+    {
+      "date": "2026",
+      "title": "2026年は「リセットの年」",
+      "source": "Newsweek日本版",
+      "url": "https://www.newsweekjapan.jp/articles/-/58185",
+      "summary": "リセール前提のワードローブやアナログ趣味など、意図を持って暮らす方向へ。",
+      "themes": [
+        "働き方・デジタル",
+        "服・持ち物"
+      ]
+    }
+  ],
+  "columns": [
+    {
+      "no": "01",
+      "title": "ミニマリストとは、物を減らす人ではなく「管理を減らす人」",
+      "lead": "部屋が空っぽであることは、ミニマリストの条件ではありません。大切なのは、持ち物を管理する手間と気持ちの負担を減らすこと。最初に知っておきたい考え方をまとめます。",
+      "theme": "部屋・インテリア",
+      "date": "2026-11-12",
+      "path": "column/what-is-minimalism"
+    },
+    {
+      "no": "02",
+      "title": "何から手放す？ 後悔しにくい順番で進める片付け",
+      "lead": "勢いで捨てて後悔するのは、たいてい「思い入れのあるもの」から手をつけたとき。判断しやすいものから順番に進めれば、迷いも後悔もぐっと減ります。",
+      "theme": "片付け・断捨離",
+      "date": "2026-11-12",
+      "path": "column/where-to-start"
+    },
+    {
+      "no": "03",
+      "title": "服を減らすなら、まず自分の「制服」を決める",
+      "lead": "毎朝の服選びに迷うのは、服が多すぎるからではなく「自分の定番」が決まっていないから。少ない服で毎日を回すための考え方を紹介します。",
+      "theme": "服・持ち物",
+      "date": "2026-11-12",
+      "path": "column/wardrobe-uniform"
+    },
+    {
+      "no": "04",
+      "title": "買う前に考えたい3つの問い",
+      "lead": "物を減らしても、同じペースで買っていればすぐに元通り。大切なのは入口を整えることです。買い物の前に、ほんの少し立ち止まるための3つの問いを紹介します。",
+      "theme": "お金・節約",
+      "date": "2026-11-12",
+      "path": "column/before-you-buy"
+    },
+    {
+      "no": "05",
+      "title": "家族と暮らすミニマリズムは、自分の持ち物から始める",
+      "lead": "一人なら自分の判断で進められる片付けも、家族がいると話は別。家族の物には手をつけず、自分の物と共有スペースから始めるのが、うまくいくコツです。",
+      "theme": "家族・子育て",
+      "date": "2026-11-12",
+      "path": "column/minimalism-with-family"
+    },
+    {
+      "no": "06",
+      "title": "お金のミニマリズムは、固定費の見直しから",
+      "lead": "毎日のコーヒー代を我慢するより、毎月自動で出ていくお金を見直すほうが効果は大きく、続けやすい。持ち物と同じように、お金の流れもシンプルにしてみましょう。",
+      "theme": "お金・節約",
+      "date": "2026-11-12",
+      "path": "column/money-and-minimalism"
+    },
+    {
+      "no": "07",
+      "title": "デジタルミニマリズム入門：アプリ・通知・アカウントの整理",
+      "lead": "部屋は片付いているのに、なぜか気持ちが落ち着かない。その原因はスマホの中にあるかもしれません。目に見えないデジタルの持ち物も、物と同じように整理できます。",
+      "theme": "働き方・デジタル",
+      "date": "2026-11-12",
+      "path": "column/digital-minimalism"
+    },
+    {
+      "no": "08",
+      "title": "何も置かない場所をひとつつくる",
+      "lead": "家じゅうを片付けるのは大変でも、「ここだけは何も置かない」という場所をひとつ決めるのは今日からできます。床、テーブル、キッチンの天板。小さな余白が暮らしを変えます。",
+      "theme": "部屋・インテリア",
+      "date": "2026-11-12",
+      "path": "column/empty-surfaces"
+    },
+    {
+      "no": "09",
+      "title": "本と思い出の品は、急いで手放さなくていい",
+      "lead": "片付けでいちばん手が止まるのが、本と思い出の品。後悔しやすいものだからこそ、急がず、自分なりの残し方を決めることが大切です。",
+      "theme": "片付け・断捨離",
+      "date": "2026-11-12",
+      "path": "column/books-and-memories"
+    },
+    {
+      "no": "10",
+      "title": "リバウンドしないための「定期点検」のすすめ",
+      "lead": "一度すっきりさせた部屋も、何もしなければ少しずつ物が戻ってきます。大がかりな片付けを繰り返さずに済むよう、短い点検を習慣にしましょう。",
+      "theme": "部屋・インテリア",
+      "date": "2026-11-12",
+      "path": "column/keep-it-simple"
+    }
+  ],
+  "creators": [
+    {
+      "platform": "Instagram",
+      "handle": "@nken_second",
+      "name": "エヌケン",
+      "subscribers": null,
+      "gender": "男性",
+      "types": [
+        "豊かさ派"
+      ],
+      "themes": [
+        "部屋・インテリア",
+        "片付け・断捨離"
+      ],
+      "description": "シンプリスト。1K一人暮らしで片付け・収納・自炊・掃除など「暮らしの楽しみ方」を発信。",
+      "url": "https://www.instagram.com/nken_second/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@minimalist_sibu",
+      "name": "ミニマリストしぶ",
+      "subscribers": null,
+      "gender": "男性",
+      "types": [
+        "ストイック派"
+      ],
+      "themes": [
+        "服・持ち物",
+        "部屋・インテリア"
+      ],
+      "description": "余白が好きな男性ミニマリスト。座右の銘は「少数精鋭」。",
+      "url": "https://www.instagram.com/minimalist_sibu/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@theminimalists",
+      "name": "The Minimalists",
+      "subscribers": null,
+      "gender": "男性",
+      "types": [
+        "思想派"
+      ],
+      "themes": [
+        "働き方・デジタル"
+      ],
+      "description": "米国の男性2人組。ポッドキャストや映像作品でミニマリズムの考え方を発信。",
+      "url": "https://www.instagram.com/theminimalists/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@minimalist_kayo",
+      "name": "カヨ",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "節約派",
+        "ゆる派"
+      ],
+      "themes": [
+        "お金・節約",
+        "家族・子育て"
+      ],
+      "description": "40代・賃貸・1児のママ。整理収納アドバイザー1級。持たない暮らしでお金が貯まる。",
+      "url": "https://www.instagram.com/minimalist_kayo/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@_konolife",
+      "name": "kono",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "ゆる派"
+      ],
+      "themes": [
+        "服・持ち物",
+        "家族・子育て"
+      ],
+      "description": "ゆるミニマリスト。年間30着のワードローブと、子どもがいてもスッキリした暮らし。",
+      "url": "https://www.instagram.com/_konolife/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@nozominimam",
+      "name": "Nozomi",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "ストイック派",
+        "効率派"
+      ],
+      "themes": [
+        "家族・子育て",
+        "部屋・インテリア"
+      ],
+      "description": "2児のママ。コップや各部屋のゴミ箱もない暮らし。著書『ものも家事も最低限。』",
+      "url": "https://www.instagram.com/nozominimam/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@piiiko_minimal",
+      "name": "ぴーこ",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "ゆる派"
+      ],
+      "themes": [
+        "家族・子育て",
+        "服・持ち物",
+        "お金・節約"
+      ],
+      "description": "夫と娘との3人暮らし。ゆるっとミニマルな日常と、少ない服・お金の話。",
+      "url": "https://www.instagram.com/piiiko_minimal/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@minimalist__ask",
+      "name": "あすか",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "ゆる派"
+      ],
+      "themes": [
+        "部屋・インテリア"
+      ],
+      "description": "ゆるミニマリスト。無理なく続けられるシンプルな暮らし。",
+      "url": "https://www.instagram.com/minimalist__ask/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@minimal_kurashi",
+      "name": "ミニマリストますみ",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "ゆる派",
+        "効率派"
+      ],
+      "themes": [
+        "家族・子育て",
+        "片付け・断捨離"
+      ],
+      "description": "ママに贈るやさしいミニマリズム。片付け後の暮らしや考え方。",
+      "url": "https://www.instagram.com/minimal_kurashi/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@minimalife_kaoru",
+      "name": "香村薫",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "効率派"
+      ],
+      "themes": [
+        "片付け・断捨離",
+        "家族・子育て"
+      ],
+      "description": "「LINE片づけ」主宰。トヨタ式おうち片づけなど著書多数。",
+      "url": "https://www.instagram.com/minimalife_kaoru/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@minimalist_kaonashi",
+      "name": "主婦ミニマリストかおなし",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "効率派",
+        "ゆる派"
+      ],
+      "themes": [
+        "片付け・断捨離",
+        "家族・子育て"
+      ],
+      "description": "片付けが苦手な主婦が、ミニマリストの暮らしを取り入れていく過程を発信。",
+      "url": "https://www.instagram.com/minimalist_kaonashi/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@minimalist_apon",
+      "name": "ミニマリストあぽん",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "効率派"
+      ],
+      "themes": [
+        "片付け・断捨離"
+      ],
+      "description": "「捨てて気楽に暮らす」がテーマ。手放すコツを分かりやすく。",
+      "url": "https://www.instagram.com/minimalist_apon/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@aya.jima",
+      "name": "あやじま",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "豊かさ派"
+      ],
+      "themes": [
+        "服・持ち物"
+      ],
+      "description": "人気ミニマリスト。持ち物や暮らしのアイデア。",
+      "url": "https://www.instagram.com/aya.jima/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@magu.09",
+      "name": "magu",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "豊かさ派"
+      ],
+      "themes": [
+        "部屋・インテリア"
+      ],
+      "description": "ミニマルで整った部屋と暮らしの写真。",
+      "url": "https://www.instagram.com/magu.09/"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@minimalisttextboo",
+      "name": "ミニマリストの教科書",
+      "subscribers": null,
+      "gender": "運営・ユニット",
+      "types": [
+        "思想派"
+      ],
+      "themes": [
+        "片付け・断捨離"
+      ],
+      "description": "初心者向けにミニマリズムの基本をまとめて発信。",
+      "url": "https://www.instagram.com/minimalisttextboo/"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@少ない物ですっきり暮らす",
+      "name": "少ない物ですっきり暮らす",
+      "subscribers": "22万人",
+      "gender": "運営・ユニット",
+      "types": [
+        "効率派"
+      ],
+      "themes": [
+        "家族・子育て",
+        "部屋・インテリア"
+      ],
+      "description": "家族4人で暮らすミニマリストのチャンネル。ミニマリスト系で登録者数1位。",
+      "url": "https://www.youtube.com/@%E5%B0%91%E3%81%AA%E3%81%84%E7%89%A9%E3%81%A7%E3%81%99%E3%81%A3%E3%81%8D%E3%82%8A%E6%9A%AE%E3%82%89%E3%81%99"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@minimalist_sibu",
+      "name": "ミニマリストしぶ",
+      "subscribers": "21.4万人",
+      "gender": "男性",
+      "types": [
+        "ストイック派"
+      ],
+      "themes": [
+        "服・持ち物",
+        "部屋・インテリア"
+      ],
+      "description": "1995年生まれ・福岡出身。ブログから始まった代表的な男性ミニマリスト。",
+      "url": "https://www.youtube.com/@minimalist_sibu"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@mai.minimalism",
+      "name": "mai minimalism",
+      "subscribers": "16.5万人",
+      "gender": "女性",
+      "types": [
+        "ゆる派"
+      ],
+      "themes": [
+        "部屋・インテリア"
+      ],
+      "description": "夫と賃貸1LDKで暮らすミニマリスト。",
+      "url": "https://www.youtube.com/@mai.minimalism"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@minimalist320",
+      "name": "ミニマリストの暮らし",
+      "subscribers": "13.5万人",
+      "gender": "運営・ユニット",
+      "types": [
+        "思想派",
+        "節約派"
+      ],
+      "themes": [
+        "お金・節約",
+        "働き方・デジタル"
+      ],
+      "description": "旧Minimalist Takeru。持ち物・お金・習慣の手放し方。2026年7月にTOKUNOさんが継承。",
+      "url": "https://www.youtube.com/@minimalist320"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@yuminyan_mini",
+      "name": "ミニマリストゆみにゃん",
+      "subscribers": "13.3万人",
+      "gender": "女性",
+      "types": [
+        "節約派"
+      ],
+      "themes": [
+        "お金・節約"
+      ],
+      "description": "東京で一人暮らしする節約ミニマリスト。",
+      "url": "https://www.youtube.com/@yuminyan_mini"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@yoshimiko_desu_",
+      "name": "よしみ子のおひとり様ライフ",
+      "subscribers": "12.9万人",
+      "gender": "女性",
+      "types": [
+        "豊かさ派"
+      ],
+      "themes": [
+        "服・持ち物"
+      ],
+      "description": "一人暮らしを楽しむミニマリスト。持ち物紹介も人気。",
+      "url": "https://www.youtube.com/@yoshimiko_desu_"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@mochi.minimum",
+      "name": "Mochi.ミニマリストになりたい私",
+      "subscribers": "8.6万人",
+      "gender": "女性",
+      "types": [
+        "ゆる派"
+      ],
+      "themes": [
+        "部屋・インテリア"
+      ],
+      "description": "30代女性。ミニマリストを目指す過程と自作家具のある部屋。",
+      "url": "https://www.youtube.com/@mochi.minimum"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@nozominimam",
+      "name": "ミニマリスト Nozomi",
+      "subscribers": "8.0万人",
+      "gender": "女性",
+      "types": [
+        "ストイック派",
+        "効率派"
+      ],
+      "themes": [
+        "家族・子育て"
+      ],
+      "description": "ミニマリスト歴12年。子どもと暮らしながら物も家事も減らす。",
+      "url": "https://www.youtube.com/@nozominimam"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@sinminimallife",
+      "name": "ミニマリストsin",
+      "subscribers": "7.0万人",
+      "gender": "男性",
+      "types": [
+        "思想派",
+        "豊かさ派"
+      ],
+      "themes": [
+        "服・持ち物",
+        "部屋・インテリア"
+      ],
+      "description": "30代男性・元アパレル。「普通」が生きづらい人へのミニマルライフ。",
+      "url": "https://www.youtube.com/@sinminimallife"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@atsushivlog",
+      "name": "あつしのぶろぐ / ゆるく生きる",
+      "subscribers": "6.2万人",
+      "gender": "男性",
+      "types": [
+        "ゆる派",
+        "節約派"
+      ],
+      "themes": [
+        "部屋・インテリア",
+        "お金・節約"
+      ],
+      "description": "ワンルームでゆるく暮らす男性ミニマリスト。",
+      "url": "https://www.youtube.com/@atsushivlog"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@miemalist",
+      "name": "ミニマムな心地よい暮らし",
+      "subscribers": "4.8万人",
+      "gender": "女性",
+      "types": [
+        "効率派"
+      ],
+      "themes": [
+        "家族・子育て"
+      ],
+      "description": "4人家族と犬。「ズボラだから持たない」家事を減らす工夫。",
+      "url": "https://www.youtube.com/@miemalist"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@minimalist__ask",
+      "name": "あすかのミニマルぐらし。",
+      "subscribers": "3.3万人",
+      "gender": "女性",
+      "types": [
+        "ゆる派"
+      ],
+      "themes": [
+        "部屋・インテリア"
+      ],
+      "description": "東京の白を基調としたミニマルな部屋。",
+      "url": "https://www.youtube.com/@minimalist__ask"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@tokimaru",
+      "name": "Tokimaru Tanaka",
+      "subscribers": null,
+      "gender": "男性",
+      "types": [
+        "ストイック派"
+      ],
+      "themes": [
+        "部屋・インテリア"
+      ],
+      "description": "14㎡の部屋で暮らす男性ミニマリスト。13分で終わる引っ越し荷造りが話題。",
+      "url": "https://www.youtube.com/@tokimaru"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@tamuramiha",
+      "name": "団地で暮らす旅好きミニマリスト",
+      "subscribers": null,
+      "gender": "女性",
+      "types": [
+        "ゆる派"
+      ],
+      "themes": [
+        "部屋・インテリア",
+        "お金・節約"
+      ],
+      "description": "築48年の団地で一人暮らしする40代女性。買わなくなったものの話。",
+      "url": "https://www.youtube.com/@tamuramiha"
+    }
+  ],
+  "blogs": [
+    {
+      "n": "筆子ジャーナル",
+      "url": "https://minimalist-fudeko.com/",
+      "d": "50代からの持たない暮らし。家計・手入れなど実用的。ほぼ毎日更新。",
+      "themes": [
+        "お金・節約",
+        "服・持ち物",
+        "片付け・断捨離"
+      ]
+    },
+    {
+      "n": "ミニマリストsoraのブログ",
+      "url": "https://minimalist-sora.com/",
+      "d": "持ち物レビュー、服、引っ越しなど。週1ペースで更新。",
+      "themes": [
+        "服・持ち物",
+        "部屋・インテリア"
+      ]
+    },
+    {
+      "n": "goodroom journal「シンプリストの暮らしかた」",
+      "url": "https://www.goodrooms.jp/journal/",
+      "d": "ミニマリストの部屋と断捨離ルールの取材連載。",
+      "themes": [
+        "部屋・インテリア",
+        "片付け・断捨離"
+      ]
+    },
+    {
+      "n": "みにまるなひげ",
+      "url": "https://www.higeusen.com/",
+      "d": "断捨離歴11年、99.9%を手放した女性ミニマリスト。",
+      "themes": [
+        "片付け・断捨離",
+        "服・持ち物"
+      ]
+    },
+    {
+      "n": "ねとらぼ（ミニマリスト関連）",
+      "url": "https://nlab.itmedia.co.jp/",
+      "d": "話題のルームツアー動画を記事で紹介。",
+      "themes": [
+        "部屋・インテリア",
+        "家族・子育て"
+      ]
+    },
+    {
+      "n": "Forbes JAPAN「ミニマリスト」タグ",
+      "url": "https://forbesjapan.com/tag/detail/minimalist",
+      "d": "働き方・消費トレンドとしてのミニマリズム。",
+      "themes": [
+        "働き方・デジタル",
+        "お金・節約"
+      ]
+    },
+    {
+      "n": "にほんブログ村「ミニマルライフ」",
+      "url": "https://lifestyle.blogmura.com/minimallife/",
+      "d": "個人ブログの新着を横断的にチェック。",
+      "themes": [
+        "家族・子育て",
+        "部屋・インテリア",
+        "片付け・断捨離"
+      ]
+    }
+  ],
+  "featured": [],
+  "faq": [
+    {
+      "q": "ミニマリストとは？",
+      "a": "本当に必要なもの・好きなものだけを持ち、管理の負担を減らして時間やお金を大切なことに使う暮らし方をする人のこと。くわしくはコラム No.01へ。"
+    },
+    {
+      "q": "自分はどのタイプ？",
+      "a": "好きなものは残したいならゆる派、家事をラクにしたいなら効率派、お金を貯めたいなら節約派から見るのがおすすめ。このページの3問診断でも確かめられます。"
+    },
+    {
+      "q": "何から始めればいい？",
+      "a": "後悔しにくい消耗品・紙類・使っていないアプリやアカウントから。服や本は後悔が出やすいので最後に。順番はコラム No.02にまとめています。"
+    },
+    {
+      "q": "断捨離して後悔する人は多い？",
+      "a": "1000人調査では64.7%が「後悔ゼロ」。後悔しやすいのは衣類・バッグ・靴（14.6%）、本・雑誌・漫画（9.8%）、CD・DVD・ゲーム（7.5%）。"
+    },
+    {
+      "q": "家族がいてもできる？",
+      "a": "できます。自分のものと共有スペースから始め、家族のものは本人に任せるのが基本。家族・子育てのページも参考に。"
+    }
+  ]
+}

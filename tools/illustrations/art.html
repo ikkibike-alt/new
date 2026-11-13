@@ -6,7 +6,7 @@ function rnd(s){return()=>{s=(s*16807)%2147483647;return(s-1)/2147483646;}}
 const INK=a=>`rgba(26,25,23,${a})`;
 
 function paper(c,W,H,r){
-  c.fillStyle='#f4f2ed';c.fillRect(0,0,W,H);
+  c.fillStyle='#fbfaf8';c.fillRect(0,0,W,H);
   // 和紙の繊維
   for(let i=0;i<9000;i++){const x=r()*W,y=r()*H,l=(8+r()*46)*W/2400,a=r()*Math.PI;
     c.strokeStyle=r()>.45?`rgba(255,255,255,${.10+r()*.22})`:`rgba(120,112,98,${.02+r()*.05})`;
@@ -72,7 +72,7 @@ function bowl(c,W,H,r,base){
   c.filter=`blur(${3*k}px)`;c.fillStyle=INK(.22);c.fillRect(cx-w*.16,top+h*.94,w*.32,h*.06);
   c.restore();
   // 光のあたる側を紙の白でぬぐう
-  c.save();path();c.clip();c.filter=`blur(${30*k}px)`;c.fillStyle='rgba(244,242,237,.35)';
+  c.save();path();c.clip();c.filter=`blur(${30*k}px)`;c.fillStyle='rgba(251,250,248,.35)';
   c.beginPath();c.ellipse(cx-w*.26,top+h*.42,w*.13,h*.36,.25,0,7);c.fill();c.restore();
 }
 
