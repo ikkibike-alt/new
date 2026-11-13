@@ -44,3 +44,9 @@ GitHub Pages で公開する場合は、リポジトリの Settings → Pages �
 ```
 node tools/illustrations/render.js "$PWD/tools/illustrations/draw.html" images
 ```
+
+トップの絵「ひとつ」（`images/art.jpg`）は `tools/illustrations/art.html` で描いています。
+
+```
+node tools/illustrations/render-art.js "$PWD/tools/illustrations/art.html" images
+```

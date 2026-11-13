@@ -1,0 +1,90 @@
+<!-- 「ひとつ」 墨の一筆と一碗。render('art',W,H) でJPEGのdata URLを返す -->
+<canvas id="c"></canvas>
+<script>
+const C=document.getElementById('c');
+function rnd(s){return()=>{s=(s*16807)%2147483647;return(s-1)/2147483646;}}
+const INK=a=>`rgba(26,25,23,${a})`;
+
+function paper(c,W,H,r){
+  c.fillStyle='#f4f2ed';c.fillRect(0,0,W,H);
+  // 和紙の繊維
+  for(let i=0;i<9000;i++){const x=r()*W,y=r()*H,l=(8+r()*46)*W/2400,a=r()*Math.PI;
+    c.strokeStyle=r()>.45?`rgba(255,255,255,${.10+r()*.22})`:`rgba(120,112,98,${.02+r()*.05})`;
+    c.lineWidth=(.5+r()*1.1)*W/2400;c.beginPath();c.moveTo(x,y);
+    c.quadraticCurveTo(x+Math.cos(a)*l*.5+(r()-.5)*l*.4,y+Math.sin(a)*l*.5+(r()-.5)*l*.4,x+Math.cos(a)*l,y+Math.sin(a)*l);c.stroke();}
+  // ごく淡いむら
+  for(let i=0;i<26;i++){const x=r()*W,y=r()*H,R=(160+r()*420)*W/2400,g=c.createRadialGradient(x,y,0,x,y,R);
+    const d=r()>.5;g.addColorStop(0,d?'rgba(150,140,122,.012)':'rgba(255,255,255,.08)');g.addColorStop(1,'rgba(0,0,0,0)');
+    c.fillStyle=g;c.fillRect(x-R,y-R,2*R,2*R);}
+}
+
+// 渇筆の一本線：毛の一本一本を描く
+function stroke(c,W,H,r){
+  const x0=W*.13,x1=W*.83,y0=H*.705,thick=H*.030,N=190,step=5*W/2400;
+  c.save();c.globalCompositeOperation='multiply';c.lineCap='round';
+  for(let i=0;i<N;i++){
+    const u=i/(N-1)-.5,edge=1-Math.pow(Math.abs(u)*2,3);          // 筆の中央ほど墨が濃い
+    let on=true,ink=.5+r()*.5,load=.75+r()*.6;                    // 毛ごとの墨の含み
+    const ph=r()*6.28,lag=r()*r()*W*.016,lead=r()*W*.02;
+    c.lineWidth=(1.1+r()*1.6)*W/2400;
+    let px=null,py=null;
+    for(let x=x0+lag;x<x1-lead;x+=step){
+      const t=(x-x0)/(x1-x0);
+      const press=(.82+.18*Math.min(1,t/.05))*(t<.72?1:1-.62*Math.pow((t-.72)/.28,1.4));   // 入り・送り・抜き
+      const y=y0+u*thick*press*(1+.10*Math.sin(t*9+ph))+Math.sin(t*3.1)*H*.0035+(r()-.5)*.8;
+      const dry=Math.max(0,(t-.30)/.70);                                           // 進むほど墨が切れる
+      if(on){if(r()<.004+dry*dry*.16/load)on=false;}else if(r()<.10*(1-dry*.82)*load)on=true;
+      if(on&&px!==null){c.strokeStyle=INK((.10+.34*edge)*ink*(1-dry*.5));c.beginPath();c.moveTo(px,py);c.lineTo(x,y);c.stroke();}
+      px=x;py=y;
+    }
+  }
+  // 入りの墨だまり
+  c.filter=`blur(${W/2400*6}px)`;c.fillStyle=INK(.28);c.beginPath();c.ellipse(x0+W*.016,y0,W*.016,thick*.42,0,0,7);c.fill();
+  c.restore();
+  return {y:y0-thick*.5};
+}
+
+// 淡墨の碗：にじみと縁の墨だまり
+function bowl(c,W,H,r,base){
+  const cx=W*.655,w=W*.150,h=w*.60,top=base-h+H*.004;
+  const path=()=>{c.beginPath();c.moveTo(cx-w/2,top);
+    c.bezierCurveTo(cx-w*.50,top+h*.55,cx-w*.36,top+h*.90,cx-w*.17,top+h*.93);
+    c.lineTo(cx-w*.16,top+h);c.lineTo(cx+w*.16,top+h);c.lineTo(cx+w*.17,top+h*.93);
+    c.bezierCurveTo(cx+w*.36,top+h*.90,cx+w*.50,top+h*.55,cx+w/2,top);
+    c.bezierCurveTo(cx+w*.25,top+h*.085,cx-w*.25,top+h*.085,cx-w/2,top);c.closePath();};
+  const k=W/2400;
+  c.save();c.globalCompositeOperation='multiply';
+  // 下地のにじみ
+  c.filter=`blur(${3*k}px)`;const g=c.createLinearGradient(cx-w/2,0,cx+w/2,0);
+  g.addColorStop(0,INK(.05));g.addColorStop(.5,INK(.11));g.addColorStop(1,INK(.24));c.fillStyle=g;path();c.fill();
+  // むら
+  c.save();c.filter='none';path();c.clip();c.filter=`blur(${16*k}px)`;
+  for(let i=0;i<40;i++){const x=cx+(r()-.5)*w,y=top+r()*h,R=(18+r()*60)*k;
+    c.fillStyle=INK(.015+r()*.04);
+    c.beginPath();c.ellipse(x,y,R*1.5,R,r()*3,0,7);c.fill();}
+  c.restore();c.globalCompositeOperation='multiply';
+  // 縁の墨だまり
+  c.filter=`blur(${3*k}px)`;c.strokeStyle=INK(.16);c.lineWidth=7*k;path();c.stroke();
+  c.filter=`blur(${.7*k}px)`;c.strokeStyle=INK(.62);c.lineWidth=2.2*k;c.lineJoin='round';path();c.stroke();
+  // 口縁の奥
+  c.filter=`blur(${1.5*k}px)`;c.strokeStyle=INK(.45);c.lineWidth=1.6*k;c.beginPath();c.ellipse(cx,top,w/2,h*.065,0,Math.PI,2*Math.PI);c.stroke();
+  // 高台の影
+  c.filter=`blur(${3*k}px)`;c.fillStyle=INK(.22);c.fillRect(cx-w*.16,top+h*.94,w*.32,h*.06);
+  c.restore();
+  // 光のあたる側を紙の白でぬぐう
+  c.save();path();c.clip();c.filter=`blur(${30*k}px)`;c.fillStyle='rgba(244,242,237,.35)';
+  c.beginPath();c.ellipse(cx-w*.26,top+h*.42,w*.13,h*.36,.25,0,7);c.fill();c.restore();
+}
+
+function light(c,W,H){ // 窓のひかり
+  c.save();c.filter=`blur(${W*.012}px)`;c.translate(W*.07,H*.10);c.transform(1,0,.42,1,0,0);
+  c.fillStyle='rgba(255,255,253,.55)';const w=W*.30,h=H*.46,g=w*.035;
+  for(let i=0;i<2;i++)for(let j=0;j<2;j++)c.fillRect(i*(w/2+g/2),j*(h/2+g/2),w/2-g/2,h/2-g/2);c.restore();
+}
+function grain(c,W,H){const d=c.getImageData(0,0,W,H),p=d.data,r=rnd(11);
+  for(let i=0;i<p.length;i+=4){const n=(r()-.5)*9;p[i]+=n;p[i+1]+=n;p[i+2]+=n;}c.putImageData(d,0,0);}
+
+window.render=(name,W,H)=>{C.width=W;C.height=H;const c=C.getContext('2d'),r=rnd(20261113);
+  paper(c,W,H,r);light(c,W,H);const s=stroke(c,W,H,r);bowl(c,W,H,r,s.y);grain(c,W,H);
+  return C.toDataURL('image/jpeg',0.9);};
+</script>
