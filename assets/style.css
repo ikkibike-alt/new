@@ -237,5 +237,10 @@ footer nav a:hover{color:var(--ink)}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 
-.ph{display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;background:var(--wash);font-family:var(--f-latin);font-size:10px;letter-spacing:.24em;color:var(--faint);text-transform:uppercase}
 .filters .n{font-family:var(--f-latin);font-size:11px;color:var(--faint);margin-left:2px}
+
+/* 遷移先の画像（読み込めたときだけ表示） */
+.entries a.item.noimg{grid-template-columns:1fr}
+.people a.hasav{grid-template-columns:56px minmax(0,1fr) auto;column-gap:20px}
+.people .av{grid-row:1 / span 3;width:56px;height:56px;object-fit:cover;background:var(--wash)}
+.people a.hasav .s,.people a.hasav .m{grid-column:2/-1}

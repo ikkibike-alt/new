@@ -6,6 +6,25 @@
   function setHash(k){try{history.replaceState(null,"",k==="all"?location.pathname:"#"+k);}catch(_){}}
   function setOn(group,btn){$$("button",group).forEach(function(x){x.classList.toggle("on",x===btn)});}
 
+  /* ページを開いたら必ず一番上から */
+  try{history.scrollRestoration="manual";}catch(_){}
+  var toTop=function(){window.scrollTo(0,0);};
+  toTop();window.addEventListener("pageshow",toTop);
+
+  /* ブログ・Instagram・YouTube：遷移先の画像を表示。読み込めなければ何も出さない */
+  $$("img.remote").forEach(function(img){
+    var srcs=(img.dataset.srcs||"").split("|"),i=0,a=img.closest("a");
+    var drop=function(){if(img.parentNode)img.parentNode.removeChild(img);};
+    var next=function(){if(i>=srcs.length){drop();return;}img.src=srcs[i++];};
+    img.referrerPolicy="no-referrer";
+    img.addEventListener("error",next);
+    img.addEventListener("load",function(){
+      if(img.naturalWidth<2){next();return;}
+      img.hidden=false;if(a){a.classList.remove("noimg");if(img.classList.contains("av"))a.classList.add("hasav");}
+    });
+    next();
+  });
+
   /* 最新トピック：テーマ絞り込み */
   var nf=$("#newsFilter");
   if(nf){
